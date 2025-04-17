@@ -4,19 +4,19 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "BULGARI",
   description: "Docs for BULGARI!",
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Guide', link: '/guide/intro' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Guide',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Introduction', link: '/guide/intro' },
+          { text: 'Get Started', link: '/guide/get-started' },
         ]
       }
     ],
