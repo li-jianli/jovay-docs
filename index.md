@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: Bulgari Docs
+  name: BULGARI Docs
   text: Welcome to Bulgari Documentation Center
   tagline: Your comprehensive guide to all Bulgari products and services
   actions:
