@@ -15,8 +15,9 @@ export default defineConfig({
       {
         text: 'Guide',
         items: [
-          { text: 'Introduction', link: '/guide/intro' },
-          { text: 'Get Started', link: '/guide/get-started' },
+          { text: 'Whitepaper', link: '/guide/whitepaper' },
+          { text: 'SmartCogent', link: '/guide/smartcogent' },
+          { text: 'DTVM', link: '/guide/dtvm' }
         ]
       }
     ],
