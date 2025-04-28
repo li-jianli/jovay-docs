@@ -8,18 +8,20 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Guide', link: '/guide/intro' }
+      { text: 'Guide', link: '/guide/about-jovay' }
     ],
 
     sidebar: [
-      {
-        text: 'Guide',
-        items: [
+//      {
+//        text: 'Guide',
+//        items: [
+          { text: 'About Jovay', link: '/guide/about-jovay' },
           { text: 'Whitepaper', link: '/guide/whitepaper' },
+          { text: 'Learn about Jovay', link: '/guide/learn-about-jovay' },
           { text: 'SmartCogent', link: '/guide/smartcogent' },
-          { text: 'DTVM', link: '/guide/dtvm' }
-        ]
-      }
+          { text: 'How to access the devnet', link: '/guide/how-to-access-the-devnet' }
+//        ]
+//      }
     ],
 
     socialLinks: [
