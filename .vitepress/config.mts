@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "BULGARI",
-  description: "Docs for BULGARI!",
+  title: "Jovay",
+  description: "Docs for Jovay!",
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -23,7 +23,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ZanTeam/bulgari-docs' }
+      { icon: 'github', link: 'https://github.com/ZanTeam/jovay-docs' }
     ]
   },
 })
