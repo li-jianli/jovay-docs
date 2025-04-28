@@ -56,7 +56,6 @@ contract JovayExample {
 
 For simplicity, we provide scripts for deploying and calling contract by web3js.
 
-[jovay-guide.tar.gz(44 KB)]()
 ```
 cd ~
 mkdir jovay-guide
@@ -155,7 +154,6 @@ function relayMsgWithProof(
 
 For simplicity of use，we provide scripts for bridging ETH. 
 
-[jovay-guide.tar.gz(44 KB)]()
 
 ```
 tree jovay-guide
