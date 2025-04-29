@@ -5,6 +5,21 @@ export default defineConfig({
   title: "Jovay",
   description: "Docs for Jovay!",
   cleanUrls: true,
+  
+  head: [
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-HH2VW9FRN9' }
+    ],
+    ['script', {}, `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HH2VW9FRN9');
+    `]
+  ],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
