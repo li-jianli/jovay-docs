@@ -12,20 +12,19 @@ export default defineConfig({
     ],
 
     sidebar: [
-//      {
-//        text: 'Guide',
-//        items: [
-          { text: 'About Jovay', link: '/guide/about-jovay' },
-          { text: 'Jovay Layer2 Whitepaper', link: '/guide/whitepaper' },
-          { text: 'Learn about Jovay', link: '/guide/learn-about-jovay' },
-          { text: 'SmartCogent Introduction', link: '/guide/smartcogent' },
-          { text: 'How to access the devnet', link: '/guide/how-to-access-the-devnet' }
-//        ]
-//      }
+      { text: 'About Jovay', link: '/guide/about-jovay' },
+      { text: 'Jovay Layer2 Whitepaper', link: '/guide/whitepaper' },
+      { text: 'Learn about Jovay', link: '/guide/learn-about-jovay' },
+      { text: 'SmartCogent Introduction', link: '/guide/smartcogent' },
+      { text: 'How to access the devnet', link: '/guide/how-to-access-the-devnet' }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/ZanTeam/jovay-docs' }
-    ]
+      { icon: 'x', link: 'https://x.com/Jovay_Network' }
+    ],
+
+    footer: {
+      copyright: '©2025 Copyright by Jovay, all rights reserved.'
+    }
   },
 })
