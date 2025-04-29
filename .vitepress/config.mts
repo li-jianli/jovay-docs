@@ -40,7 +40,7 @@ export default defineConfig({
               { text: 'Explorer', link: '/guide/explorer' },
             ],
           },
-          { text: 'Jovay Layer2 Whitepaper', link: '/guide/whitepaper' },
+          { text: 'Jovay Layer 2 Whitepaper', link: '/guide/whitepaper' },
           { text: 'SmartCogent Introduction', link: '/guide/smartcogent' },
           { text: 'How to access the devnet', link: '/guide/how-to-access-the-devnet' }
 //        ]

@@ -21,11 +21,6 @@ outline: deep
 - **Extensible Architecture:**
   - Modular frontend/backend design enables seamless adaptation to evolving Layer 2 network requirements.
   - Supports plug-and-play functional expansions for customized visual analytics.
-- **AI-Powered Insights:**
-  ntegrated large language models (LLMs) enable:
-  - Intelligent transaction pattern detection
-  - Predictive analytics for cross-chain workflows
-  - Automated anomaly identification
 
 ## Observable System
 Jovay observation system allows end users and developers to view transactions, prove system latency, and service call throughput in a visual way. The query capability supports observing and understanding the calling relationships and link duration of Layer2 system components, assisting developers in analyzing software performance and transaction behavior, and viewing the application and operation of the Layer2 network in a more three-dimensional way.
