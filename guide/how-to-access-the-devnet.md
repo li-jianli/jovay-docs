@@ -1,7 +1,10 @@
+---
+outline: deep
+---
 # How to access the devnet
 ## How to Apply for a Trial
 Applying for early access to Jovay is quick and straightforward:
-1. **Complete the Application Form:** Provide basic details including:
+1. **Complete the [Application Form](https://docs.google.com/forms/d/e/1FAIpQLSevnOhIX14bomdvnXzUGsNgbYHR9wk1BqkQ4l-5eS4Jdiqw6Q/viewform):** Provide basic details including:
     - Full Name
     - Professional Email Address
     - Company Name & Your Position
@@ -15,7 +18,7 @@ Applying for early access to Jovay is quick and straightforward:
 ![submission](./Images/Access/submission.png)
 
 ## Contract Deployment Tutorial
-We welcome everyone to deploy and call smart contract on Jovay. This section will introduce how to deploy and call smart contracts compiled by DTVM on jovay. We describe all the example operator on **Ubuntu 22.04**.
+We welcome everyone to deploy and call smart contract on Jovay. This section will introduce how to deploy and call smart contracts compiled by DTVM on jovay. All operators below are demonstrated on **Ubuntu 22.04**.
 
 Before that, you need : 
 
@@ -26,14 +29,37 @@ Before that, you need :
     sudo apt install nodejs npm    # node version must bigger than 22.x
     sudo apt-get install solc      # solc version must bigger than 0.8.25
     ```
-2. prepare DTVM for complie wasm bytecode. reference [GitHub - DTVMStack/DTVM_SolSDK](https://github.com/DTVMStack/DTVM_SolSDK?tab=readme-ov-file) or use release package [DTVM_SolSDK-0.1.0-Linux-ubuntu22.04.tar.gz](https://github.com/DTVMStack/DTVM_SolSDK/releases/tag/v0.1.0)
+2. Prepare DTVM_SolSDK to complie solidity into wasm bytecode. You could download DTVM_SolSDK from [here](https://github.com/DTVMStack/DTVM_SolSDK/releases/tag/v0.1.0), we use [DTVM_SolSDK-0.1.0-Linux-ubuntu22.04.tar.gz](https://github.com/DTVMStack/DTVM_SolSDK/releases/download/v0.1.0/DTVM_SolSDK-0.1.0-Linux-ubuntu22.04.tar.gz)
     ```
     cd ~
+    wget https://github.com/DTVMStack/DTVM_SolSDK/releases/download/v0.1.0/DTVM_SolSDK-0.1.0-Linux-ubuntu22.04.tar.gz
     mkdir dtvm
     tar -zxvf DTVM_SolSDK-0.1.0-Linux-ubuntu22.04.tar.gz -C dtvm
     ```
 
 3. deposit some ETH into your Jovay account `0x7CaD994FC1c0d94ef232FBe3b45B685018Ee59B6` from Sepolia through the `Deposit` operation in the [Bridge between Sepolia and Jovay](#how-to-apply-for-a-trial) to facilitate subsequent operations.
+
+4. For simplicity, we provide example scripts for deploying and calling contract by web3js. And you can also use web3js to interact with the Jovay yourself without the example.
+
+```shell
+tree jovay-guide
+jovay-guide
+├── conf
+│   └── abi
+│       ├── JovayExample.json      // the abi of example contract
+│       ├── L1ETHBridge.json       // the abi of bridge contract on Sepolia used by bridging
+│       └── L2ETHBridge.json       // the abi of bridge contract on Jovay used by bridging
+├── package-lock.json
+├── package.json
+├── scripts
+│   ├── eth_bridge.js              // the script for bridging ETH; include deposit, withdraw, finalizeWithdraw
+│   └── interact_with_contract.js  // the scripy for deploy and call contract on Jovay
+└── src
+    └── contracts
+        └── jovay_example.sol
+
+6 directories, 8 files
+```
 
 Now, we have a simple example contract:
 
@@ -54,8 +80,7 @@ contract JovayExample {
 }
 ```
 
-For simplicity, we provide scripts for deploying and calling contract by web3js.
-
+The example contract above can be found injovay-guide.tar.gz. And our following operations are based on this script package.
 ```
 cd ~
 mkdir jovay-guide
@@ -63,45 +88,52 @@ tar -zxvf jovay-guide.tar.gz -C jovay-guide/
 cd jovay-guide/
 npm install
 ```
-Before using scripts, you should prepare `.env` with `.env.l2.example`;  And you need to obtain permission for http://sequencer.jovay.io, reference [How to Apply for a Trial](#how-to-apply-for-a-trial) .
-```
-L2_RPC_URL="http://sequencer.jovay.io"
+
+Before using scripts, you should prepare `.env` with `.env.l2.example`; And you need to obtain a `L2_RPC_URL` in [How to Apply for a Trial](#how-to-apply-for-a-trial) .
+```solidity{.env.l2.example}
+L2_RPC_URL="url for Jovay"
 
 // The account you haven deposited from Sepolia on Jovay
 L2_OWNER_ADDR=foo
 
 // The private key of the account you haven deposited on Jovay. 
-// here is private of 0x7CaD994FC1c0d94ef232FBe3b45B685018Ee59B6
 L2_PRIVATE_KEY=bar
 ```
 
 First, complie solidity smart contract to wasm bytecode:
 ```
 cd ~/jovay-guide/
-# Step 1: Compile Solidity to Yul IR
+// Step 1: Compile Solidity to Yul IR
 solc --ir --optimize-yul -o . --overwrite src/contracts/jovay_example.sol
 
-# Step 2: Compile Yul IR to WebAssembly
+// Step 2: Compile Yul IR to WebAssembly
 yul2wasm --input JovayExample.yul --output jovay_example.wasm
 ```
 
-Second, deploy wasm bytecode by scripts/interact_with_contract.js:
+Second, deploy wasm bytecode by `scripts/interact_with_contract.js`:
 ```
 node scripts/interact_with_contract.js deploy jovay_example.cbin.hex
 ```
+| Parameter  | Value  | Description  |
+|---|---|---|
+|wasm bytecode  | jovay_example.cbin.hex  | the wasm bytecode will be deployed  |
+|`gas_price` | 4  | max fee of per gas  |
+
 deployed contract address  will be displayed as shown below:
 ```
-  contractAddress: '0x3b87b43889bbe72b9d6175c7c7f91c54814c6134',
+contractAddress: '0x3b87b43889bbe72b9d6175c7c7f91c54814c6134',
 ```
-And then, you can call contract 0x3b87b43889bbe72b9d6175c7c7f91c54814c6134 on Jovay, use below script to call SetContentinterface:
+
+And then, you can call contract `0x3b87b43889bbe72b9d6175c7c7f91c54814c6134` on Jovay, use below script to call SetContentinterface:
 ```
-node scripts/interact_with_contract.js call_SetContent 0x3b87b43889bbe72b9d6175c7c7f91c54814c6134 conf/abi/JovayExample.json "hellojovay" 
+node scripts/interact_with_contract.js call_SetContent 0x3b87b43889bbe72b9d6175c7c7f91c54814c6134 conf/abi/JovayExample.json "hellojovay" 4 
 ```
 | Parameter  | Value  | Description  |
 |---|---|---|
 |contract address  | 0x3b87b43889bbe72b9d6175c7c7f91c54814c6134  | the contract address on Jovay you want to call;  |
 |abi  | conf/abi/JovayExample.json  | the abi file of contract  |
 |method parameter  | "hellojovay" | the method parameter of `SetContent`  |
+|`gas_price` | 4  | max fee of per gas  |
 
 
 ## Bridge ETH between Sepolia and Jovay
@@ -127,7 +159,7 @@ function deposit(address to_, uint256 amount_, uint256 gasLimit_, bytes memory m
 ```
 
 ### WithDraw From Jovay to Sepolia
-```
+```solidity
 /**
  * user withdraw eth from Jovay to Sepolia;
  * @param to_; withdraw target address on Sepolia;
@@ -151,30 +183,9 @@ function relayMsgWithProof(
     IL1Mailbox.L2MsgProof memory proof_
 ) external payable;
 ```
+And，we also put the bridge operation script in jovay-guide.tar.gz.
 
-For simplicity of use，we provide scripts for bridging ETH. 
-
-
-```
-tree jovay-guide
-jovay-guide
-├── conf
-│   └── abi
-│       ├── JovayExample.json      // the abi of example contract
-│       ├── L1ETHBridge.json       // the abi of bridge contract on Sepolia used by bridging
-│       └── L2ETHBridge.json       // the abi of bridge contract on Jovay used by bridging
-├── package-lock.json
-├── package.json
-├── scripts
-│   ├── eth_bridge.js              // the script for bridging ETH; include deposit, withdraw, finalizeWithdraw
-│   └── interact_with_contract.js  // the scripy for deploy and call contract on Jovay
-└── src
-    └── contracts
-        └── jovay_example.sol
-
-6 directories, 8 files
-```
-First，prepare `.env` by replacing the `private_key` and `owner_addr` in `.env.bridge.example` with yours; And configure the L2_RPC_URL address obtained in section [How to Apply for a Trial](#how-to-apply-for-a-trial).
+Before bridging ETH，you should prepare `.env` by replacing the `private_key` and `owner_addr` in `.env.bridge.example` with yours; And configure the L2_RPC_URL address obtained in section [How to Apply for a Trial](#how-to-apply-for-a-trial).
 
 ```shell {.env.bridge.example}
 RPC_URL="url of sepolia"
@@ -197,22 +208,23 @@ L2_ETH_BRIDGE_ABI=conf/abi/L2ETHBridge.json
 
 Second, if you want to deposit ETH from Sepolia to address `0x7CaD994FC1c0d94ef232FBe3b45B685018Ee59B6` on Jovay. Please use the below command: 
 ```
-node scripts/eth_bridge.js depositEth 0x7CaD994FC1c0d94ef232FBe3b45B685018Ee59B6 27000000 7000000 37000000  
+node scripts/eth_bridge.js depositEth 0x7CaD994FC1c0d94ef232FBe3b45B685018Ee59B6 10000000000 7000000 11000000000 40630943068 
 ```
 | Parameter  | Value  | Description  |
 |---|---|---|
 | `to`  | 0x7CaD994FC1c0d94ef232FBe3b45B685018Ee59B6  | deposit target address on Jovay  |
-|`amount`  | 27000000 (wei)   | the amount want to transfer to deposit target address  |
+|`amount`  | 10000000000 (wei)   | the amount want to transfer to deposit target address  |
 |`gaslimit`   | 7000000   | the gaslimit you want set for L2 transfer transaction associated with L1  |
-| `value`  | 37000000 (wei)  | the value you should pay for deposit must bigger than the sum of gaslimit and amount  |
+| `value`  | 11000000000 (wei) | the value you should pay for deposit must bigger than the sum of gaslimit and amount  |
+|`gas_price` | 40630943068  | max fee of per gas  |
 
 
-And then，if you want withdraw ETH from Jovay to Sepolia，you should send two commands `withdraw` on Jovay and `finalizeWithdraw` on Sepolia. 
+And then，if you want withdraw ETH from Jovay to Sepolia，you should send two transactions `withdraw` on Jovay and `finalizeWithdraw` on Sepolia. 
 
-1. withdraw on Jovay, which is only transfer ETH from sender to Bridge Contract on Jovay, not transfer to withdraw target address on Sepolia;
+1. Withdraw on Jovay, which is only transfer ETH from sender to Bridge Contract on Jovay, not transfer to withdraw target address on Sepolia;
 
 ```
-node script/eth_bridge.js withdrawEth 0x7CaD994FC1c0d94ef232FBe3b45B685018Ee59B6 105 1130000 1200000 
+node scripts/eth_bridge.js withdrawEth 0x7CaD994FC1c0d94ef232FBe3b45B685018Ee59B6 105 1130000 1200000 40630943068 
 ```
 | Parameter  | Value  | Description  |
 |---|---|---|
@@ -220,18 +232,20 @@ node script/eth_bridge.js withdrawEth 0x7CaD994FC1c0d94ef232FBe3b45B685018Ee59B6
 |`amount`  | amount	105 (wei)   | the amount want to transfer to withdraw target address.  |
 |`gaslimit`   | 1130000  | the gaslimit you want set for L1 transfer transaction associated with L2.  |
 | `value`  | 1200000 (wei)  | the value you should pay for withdraw must bigger than the sum of gaslimit and amount.  |
+|`gas_price` | 40630943068  | max fee of per gas  |
 
 
-2. finalize withdraw on Sepolia, finishing withdraw on Sepolia. Bridge Contract will transfer ETH to withdraw target address on Sepolia according to the L2 Msg sent by L2 Withdraw Transaction. The following commands can only be executed after the transaction is finailized on Sepolia. You can confirm whether the L2 Withdraw Transaction is confirmed through the explorer.
+2. Finalize withdraw on Sepolia, finishing withdraw on Sepolia. Bridge Contract will transfer ETH to withdraw target address on Sepolia according to the L2 Msg sent by L2 Withdraw Transaction. The following commands can only be executed after the transaction is finailized on Sepolia. You can confirm whether the L2 Withdraw Transaction is finalized through the explorer.
 
 ```
- node scripts/eth_bridge.js finalizeWithdraw 568 0x1fc547fd2e2793de5639a6d01d36b16962d4f7bbccf4eb8c2460b80b2387f1f4 0x0000000000000000000000000000000000000000000000000000000000000000AD3228B676F7D3CD4284A5443F17F1962B36E491B30A40B2405849E597BA5FB549907CABA6026FC29793BCD2643CC473EA1961E750D21D0CA0681B6BC47036F721DDB9A356815C3FAC1026B6DEC5DF3124AFBADB485C9BA5A3E3398A04B7BA8508C69FA8494A232D4152ED4E9804888ACB9736E5B573A91C7C8286C8BD94FCDF11D320ECF7A95981F47E88A7E45E7D3BF3EFE42A3725F02F8E529B85A0F2D10480C2EB2A1D9ED30415BAC4EDBE840944AC03B0EE4EA8EA564ECE94177EA3CADC
+ node scripts/eth_bridge.js finalizeWithdraw 568 0x1fc547fd2e2793de5639a6d01d36b16962d4f7bbccf4eb8c2460b80b2387f1f4 0x0000000000000000000000000000000000000000000000000000000000000000AD3228B676F7D3CD4284A5443F17F1962B36E491B30A40B2405849E597BA5FB549907CABA6026FC29793BCD2643CC473EA1961E750D21D0CA0681B6BC47036F721DDB9A356815C3FAC1026B6DEC5DF3124AFBADB485C9BA5A3E3398A04B7BA8508C69FA8494A232D4152ED4E9804888ACB9736E5B573A91C7C8286C8BD94FCDF11D320ECF7A95981F47E88A7E45E7D3BF3EFE42A3725F02F8E529B85A0F2D10480C2EB2A1D9ED30415BAC4EDBE840944AC03B0EE4EA8EA564ECE94177EA3CADC 40630943068
 ```
 | Parameter  | Value  | Description  |
 |---|---|---|
 | `batch_index`  | 568  | the batch index of withdraw tx hash. you can find at [jovay explorer](http://explorer.jovay.io/l2/home?bizId=ethdevnetl2&unionId=100100).</br>![jovay explorer-1](./Images/Access/jovay%20explorer-1.png)<br>![jovay explorer-2](./Images/Access/jovay%20explorer-2.png)  |
 |`tx_hash`  |0x1fc547fd2e2793de5639a6d01d36b16962d4f7bbccf4eb8c2460b80b2387f1f4 |the withdraw tx hash; this script will get the parameters `nonce` and `msg` of L2 Msg automatically.  |
-|`proof`   | 0x0000000000000000000000000000000000000000000000000000000000000000AD3228B676F7D3CD4284A5443F17F1962B36E491B30A40B2405849E597BA5FB549907CABA6026FC29793BCD2643CC473EA1961E750D21D0CA0681B6BC47036F721DDB9A356815C3FAC1026B6DEC5DF3124AFBADB485C9BA5A3E3398A04B7BA8508C69FA8494A232D4152ED4E9804888ACB9736E5B573A91C7C8286C8BD94FCDF11D320ECF7A95981F47E88A7E45E7D3BF3EFE42A3725F02F8E529B85A0F2D10480C2EB2A1D9ED30415BAC4EDBE840944AC03B0EE4EA8EA564ECE94177EA3CADC  | the spv proof of L2 msg. you can find at [jovay explorer](http://explorer.jovay.io/l2/home?bizId=ethdevnetl2&unionId=100100) after batch is finalized.</br> ![jovay explorer](./Images/Access/jovay%20explorer.png)|
+|`proof`   | 0x0000000000000000000000000000000000000000000000000000000000000000AD3228B676F7D3CD4284A5443F17F1962B36E491B30A40B2405849E597BA5FB549907CABA6026FC29793BCD2643CC473EA1961E750D21D0CA0681B6BC47036F721DDB9A356815C3FAC1026B6DEC5DF3124AFBADB485C9BA5A3E3398A04B7BA8508C69FA8494A232D4152ED4E9804888ACB9736E5B573A91C7C8286C8BD94FCDF11D320ECF7A95981F47E88A7E45E7D3BF3EFE42A3725F02F8E529B85A0F2D10480C2EB2A1D9ED30415BAC4EDBE840944AC03B0EE4EA8EA564ECE94177EA3CADC  | the spv proof of L2 msg. you can find at [jovay explorer](http://explorer.jovay.io/l2/home?bizId=ethdevnetl2&unionId=100100) after batch is finalized.</br>search withdraw tx hash and check the status is finalized</br>![jovay explorer](./Images/Access/jovay%20explorer.png)|
+|`gas_price` | 40630943068  | max fee of per gas  |
 
 ## Jovay API
 Jovay is fully compatible with the Ethereum ecosystem, offering native support for standard Ethereum JSON-RPC interfaces. Developers can seamlessly integrate using popular tools and libraries such as Web3j, Web3.js, or ethers.js, without the need for custom adaptations. This enables existing Ethereum applications to migrate or expand to the Jovay with minimal effort, reducing integration costs and accelerating development.

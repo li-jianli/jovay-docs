@@ -1,3 +1,6 @@
+---
+outline: deep
+---
 # About Jovay
 
 [Jovay](https://jovay.io/) is a high-performance, user-friendly Layer 2 scaling solution that aims to break through the scalability bottleneck of blockchain through innovative technologies while maintaining compatibility with the Ethereum ecosystem.

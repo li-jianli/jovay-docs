@@ -1,3 +1,6 @@
+---
+outline: deep
+---
 # Disclaimer Wording for Jovay
 
 ## Disclaimer
