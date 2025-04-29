@@ -15,9 +15,17 @@ export default defineConfig({
 //      {
 //        text: 'Guide',
 //        items: [
-          { text: 'About Jovay', link: '/guide/about-jovay' },
+          {
+            text: 'Learn about Jovay',
+            collapsed: false,
+            link: '/guide/learn-about-jovay',
+            items: [
+              { text: 'About Jovay', link: '/guide/about-jovay' },
+              { text: 'DTVM', link: '/guide/dtvm' },
+              { text: 'Explorer', link: '/guide/explorer' },
+            ],
+          },
           { text: 'Jovay Layer2 Whitepaper', link: '/guide/whitepaper' },
-          { text: 'Learn about Jovay', link: '/guide/learn-about-jovay' },
           { text: 'SmartCogent Introduction', link: '/guide/smartcogent' },
           { text: 'How to access the devnet', link: '/guide/how-to-access-the-devnet' }
 //        ]
