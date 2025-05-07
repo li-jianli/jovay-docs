@@ -45,9 +45,6 @@ export default defineConfig({
     nav: [{ text: "Guide", link: "/guide/about-jovay" }],
 
     sidebar: [
-      //      {
-      //        text: 'Guide',
-      //        items: [
       {
         text: "Learn about Jovay",
         collapsed: false,
@@ -65,8 +62,6 @@ export default defineConfig({
         link: "/guide/how-to-access-the-devnet",
       },
       { text: "Disclaimer", link: "/guide/disclaimer" },
-      //        ]
-      //      }
     ],
 
     socialLinks: [{ icon: "x", link: "https://x.com/Jovay_Network" }],
