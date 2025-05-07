@@ -7,6 +7,8 @@
     "docs:preview": "vitepress preview"
   },
   "devDependencies": {
+    "markdown-it-imsize": "^2.0.1",
     "vitepress": "^2.0.0-alpha.4"
-  }
+  },
+  "repository": "git@github.com:li-jianli/jovay-docs.git"
 }
