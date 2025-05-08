@@ -13,6 +13,9 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, inject } from 'vue'
+import debug from 'debug'
+
+const log = debug('jovay:image-preview')
 
 interface EventBus {
   on: (event: string, callback: Function) => void;
@@ -26,7 +29,6 @@ const previewRef = ref<HTMLElement | null>(null)
 const eventBus = inject<EventBus>('eventBus')
 
 const openPreview = (src: string) => {
-  console.log('Opening preview for:', src)
   previewImage.value = src
   showPreview.value = true
   isLoading.value = true
@@ -45,12 +47,11 @@ const closePreview = () => {
 }
 
 const handleImageLoad = () => {
-  console.log('Image loaded')
   isLoading.value = false
 }
 
 const handleImageError = () => {
-  console.log('Image load error')
+  log('Image load error')
   isLoading.value = false
   hasError.value = true
 }
@@ -63,11 +64,11 @@ const handleKeyDown = (e: KeyboardEvent) => {
 }
 
 onMounted(() => {
-  console.log('ImagePreview mounted, eventBus:', !!eventBus)
+  log('ImagePreview mounted')
   document.addEventListener('keydown', handleKeyDown)
   if (eventBus) {
     eventBus.on('preview-image', (src: string) => {
-      console.log('Received preview event:', src)
+      log('Received preview event:', src)
       openPreview(src)
     })
   }

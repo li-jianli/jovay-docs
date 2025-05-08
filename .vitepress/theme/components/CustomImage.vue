@@ -10,6 +10,10 @@
 
 <script setup lang="ts">
 import { ref, inject, onMounted } from 'vue'
+import debug from 'debug'
+
+const log = debug('jovay:custom-image')
+log('CustomImage mounted')
 
 interface ImagePreviewService {
   openPreview: (src: string) => void;
@@ -30,19 +34,18 @@ const hasError = ref(false)
 const imagePreview = inject<ImagePreviewService>('imagePreview')
 
 onMounted(() => {
-  console.log('CustomImage mounted, imagePreview service:', !!imagePreview)
+  log('CustomImage mounted, imagePreview service:', !!imagePreview)
 })
 
 const handleClick = () => {
-  console.log('Image clicked:', props.src)
   if (!hasError.value && imagePreview?.openPreview) {
     try {
       imagePreview.openPreview(props.src)
     } catch (error) {
-      console.error('Failed to open image preview:', error)
+      log('Failed to open image preview:', error)
     }
   } else {
-    console.warn('Cannot open preview:', {
+    log('Cannot open preview:', {
       hasError: hasError.value,
       hasPreviewService: !!imagePreview?.openPreview
     })
@@ -50,7 +53,7 @@ const handleClick = () => {
 }
 
 const handleError = () => {
-  console.error('Image load error:', props.src)
+  log('Image load error:', props.src)
   hasError.value = true
 }
 </script>
