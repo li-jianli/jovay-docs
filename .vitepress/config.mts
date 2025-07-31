@@ -18,6 +18,7 @@ export default defineConfig({
   },
 
   head: [
+    ["link", { rel: "icon", href: "/favicon.png" }],
     [
       "script",
       {
@@ -57,26 +58,45 @@ export default defineConfig({
         items: [
           { text: "JSON-RPC API Methods", link: "/guide/json-rpc-api-methods" },
           { text: "Jovay Contracts", link: "/guide/jovay-contracts" },
-          
-          { text: "Foundry Tutorial",
-//          link: "/guide/foundry-tutorial",
-            collapsed: true,
-            items: [
-              { text: "Create and Deploy Your First Token", link: "/guide/token-foundry" },
-              { text: "Create and Deploy Your First NFT", link: "/guide/nft-foundry" },
-              { text: "Create and Deploy a Simple Staking Contract", link: "/guide/contract-foundry" },
-            ],
-          },
-          { text: "Hardhat Tutorial",
-//          link: "/guide/hardhat-tutorial"
-            collapsed: true,
-            items: [
-              { text: "Create and Deploy Your First Token", link: "/guide/token-hardhat" },
-              { text: "Create and Deploy Your First NFT", link: "/guide/nft-hardhat" },
-              { text: "Build and Deploy a Simple Staking Contract", link: "/guide/contract-hardhat" },
-            ],
-          },
 
+          {
+            text: "Foundry Tutorial",
+            //          link: "/guide/foundry-tutorial",
+            collapsed: true,
+            items: [
+              {
+                text: "Create and Deploy Your First Token",
+                link: "/guide/token-foundry",
+              },
+              {
+                text: "Create and Deploy Your First NFT",
+                link: "/guide/nft-foundry",
+              },
+              {
+                text: "Create and Deploy a Simple Staking Contract",
+                link: "/guide/contract-foundry",
+              },
+            ],
+          },
+          {
+            text: "Hardhat Tutorial",
+            //          link: "/guide/hardhat-tutorial"
+            collapsed: true,
+            items: [
+              {
+                text: "Create and Deploy Your First Token",
+                link: "/guide/token-hardhat",
+              },
+              {
+                text: "Create and Deploy Your First NFT",
+                link: "/guide/nft-hardhat",
+              },
+              {
+                text: "Build and Deploy a Simple Staking Contract",
+                link: "/guide/contract-hardhat",
+              },
+            ],
+          },
         ],
       },
       {
@@ -84,16 +104,12 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: "Developer Quickstart", link: "/guide/developer-quickstart" },
-          
         ],
       },
       {
         text: "Testnet Resources",
         collapsed: false,
-        items: [
-          { text: "Jovay Explorer", link: "/guide/jovay-explorer" },
-          
-        ],
+        items: [{ text: "Jovay Explorer", link: "/guide/jovay-explorer" }],
       },
     ],
 
