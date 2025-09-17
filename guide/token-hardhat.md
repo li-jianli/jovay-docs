@@ -168,10 +168,10 @@ Before starting, make sure you have:
     module.exports = {
     solidity: "0.8.20",
     networks: {
-        jovay: {
-        url: "JOVAY_RPC_URL", // YOUR RPC URL
-        chainId: 2019775,
-        accounts: ["PRIVATE_KEY"],
+        Jovay: {
+            url: "JOVAY_RPC_URL", // YOUR RPC URL
+            chainId: 2019775,
+            accounts: ["PRIVATE_KEY"],
         },
     },
     };
