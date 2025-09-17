@@ -107,9 +107,12 @@ export default defineConfig({
         ],
       },
       {
-        text: "Testnet Resources",
+        text: "Resources",
         collapsed: false,
-        items: [{ text: "Jovay Explorer", link: "/guide/jovay-explorer" }],
+        items: [
+          { text: "Jovay Testnet Explorer", link: "/guide/jovay-explorer" },
+          { text: "Audit Reports", link: "/resources/audit-reports" },
+        ],
       },
     ],
 
