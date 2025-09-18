@@ -112,6 +112,7 @@ export default defineConfig({
         items: [
           { text: "Jovay Testnet Explorer", link: "/guide/jovay-explorer" },
           { text: "Audit Reports", link: "/resources/audit-reports" },
+          { text: "Auxiliary Contracts", link: "/resources/auxiliary-contracts" },
         ],
       },
     ],
