@@ -103,7 +103,10 @@ export default defineConfig({
         text: "Guides",
         collapsed: false,
         items: [
+          { text: "User Guide", link: "/guide/user-guide" },
+          { text: "Developer Guide", link: "/guide/developer-guide" },
           { text: "Developer Quickstart", link: "/guide/developer-quickstart" },
+          { text: "Jovay Bridge DApp Tutorial", link: "/guide/jovay-bridge-dapp-tutorial" }
         ],
       },
       {
