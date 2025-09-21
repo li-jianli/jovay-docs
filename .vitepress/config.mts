@@ -58,6 +58,7 @@ export default defineConfig({
         items: [
           { text: "JSON-RPC API Methods", link: "/guide/json-rpc-api-methods" },
           { text: "Jovay Contracts", link: "/guide/jovay-contracts" },
+          { text: "Using Jovay with Anvil", link: "/developer/jovay-anvil-guide" },
 
           {
             text: "Foundry Tutorial",
