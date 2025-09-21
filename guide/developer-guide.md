@@ -31,5 +31,5 @@ Need to move assets between Ethereum and Jovay? We offer two guides depending on
 
 + [Jovay Bridge DApp Guide (Recommended)](./jovay-bridge-dapp-tutorial.md)  
 Learn to use the official Bridge DApp for a simple and secure user experience.
-+ [Jovay Bridge Developer Reference](./bridge-developer-reference.md)  
++ [Jovay Bridge Developer Reference](../developer/jovay-bridge-developer-reference.md)  
 For developers who want to understand the technical details of interacting directly with the bridge smart contracts.

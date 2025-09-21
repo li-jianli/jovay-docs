@@ -10,7 +10,7 @@ Below are the details for the mainnet and testnet versions of the bridge:
 
 | Version | DApp URL | Network | Bridge Contracts |
 | :--- | :--- | :--- | --- |
-| **Jovay Bridge(Mainnet)** | [https://bridge.jovay.io/](https://bridge.jovay.io/) | Layer1: _**Ethereum Mainnet**_<br/>Layer2: _**Jovay Mainnet**_ | Layer1: _Coming soon_<br/>Layer2: _Coming soon_ |
+| **Jovay Bridge(Mainnet)** | [https://bridge.jovay.io/](https://bridge.jovay.io/) | Layer1: _**Ethereum Mainnet**_<br/>Layer2: _**Jovay Mainnet**_ | Layer1: _0x922248db4a99bb542539ae7165fb9d7a546fb9f1_<br/>Layer2: _0xb220d17a11bd2d11e3f57a305ff5b481c81b1028_ |
 | **Jovay Bridge(Testnet)** | [http://bridge-test.jovay.io/](http://bridge-test.jovay.io/) | Layer1: _**ETH Sepolia Testnet**_<br/>Layer2: _**Jovay Sepolia Testnet**_ | Layer1: _0x940eFB877281884699176892B02A3db49f29CDE8_<br/>Layer2: _0xD278bC7189d2ed65c005c345A0e8a387f15b7a3A_ |
 
 ## Prerequisites
