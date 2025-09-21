@@ -6,7 +6,7 @@ This document provides a list of addresses for useful auxiliary and helper contr
 
 | Contract     | Address |
 | :----------- | :------ |
-| WETH9        |  *Coming soon*        |
+| WETH9        |  *0xeA29Cbb2808CF848C185E4405Bb002F53f92a241*        |
 | Multicall3   |  *Coming soon*        |
 
 ## Jovay Testnet
