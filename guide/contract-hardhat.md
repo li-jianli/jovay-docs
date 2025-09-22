@@ -10,6 +10,16 @@ This contract allows users to:
 - Earn time-based rewards
 - Claim or withdraw their staked tokens and rewards
 
+Before you begin, please note the connection details for the network you are targeting:
+
+| Network | RPC URL | Chain ID |
+| --- | --- | --- |
+| Jovay Mainnet | `https://rpc.jovay.io` | `5734951` |
+| Jovay Testnet | `https://api.zan.top/public/jovay-testnet` | `2019775` |
+
+
+This guide will use the **Testnet** configuration in its examples.
+
 ## 🧰 Prerequisites
 
 Before starting, make sure you have:
