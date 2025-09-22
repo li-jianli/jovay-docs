@@ -115,6 +115,16 @@ export default defineConfig({
           { text: "Auxiliary Contracts", link: "/resources/auxiliary-contracts" },
         ],
       },
+      {
+        text: "Legal",
+        collapsed: false,
+        items: [
+          { text: "Terms of Service", link: "/legal/terms-of-service" },
+          { text: "Privacy Policy", link: "/legal/privacy-policy" },
+          { text: "Brand Usage Policy", link: "/legal/brand-usage-policy" },
+          { text: "Disclaimers", link: "/guide/disclaimer" },
+        ],
+      },
     ],
 
     socialLinks: [{ icon: "x", link: "https://x.com/Jovay_Network" }],
