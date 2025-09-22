@@ -56,7 +56,7 @@ Open a **new terminal window** (leaving Anvil running) and use the following com
 cast call --rpc-url http://127.0.0.1:8545 0x8d53dcf0bb191743a2b7db56a9feb284164f690f "symbol()"
 ```
 
-This command will call the `symbol()` function and return the result. `cast` automatically decodes the string, so you should see the token's symbol printed in your terminal, proving that you are successfully interacting with the forked state of the Jovay Testnet.
+This command will call the `symbol()` function and return the result.
 
 ## Conclusion
 
