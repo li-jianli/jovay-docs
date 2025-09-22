@@ -4,7 +4,7 @@ outline: deep
 
 # Using Jovay with Anvil
 
-[Anvil](https://book.getfoundry.sh/anvil/) is a local testnet node included with Foundry that you can use for testing your contracts. It can also be used to fork other networks, allowing you to test against real-world contract state without needing testnet funds or waiting for transaction times.
+Anvil is a local testnet node included with Foundry that you can use for testing your contracts. It can also be used to fork other networks, allowing you to test against real-world contract state without needing testnet funds or waiting for transaction times.
 
 This guide will show you how to use Anvil to fork the Jovay Testnet for local development.
 
