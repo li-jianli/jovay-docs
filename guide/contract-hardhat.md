@@ -10,10 +10,19 @@ This contract allows users to:
 - Earn time-based rewards
 - Claim or withdraw their staked tokens and rewards
 
+Before you begin, please note the connection details for the network you are targeting:
+
+| Network | RPC URL | Chain ID |
+| --- | --- | --- |
+| Jovay Mainnet | `https://rpc.jovay.io` | `5734951` |
+| Jovay Testnet | `https://api.zan.top/public/jovay-testnet` | `2019775` |
+
+
+This guide will use the **Testnet** configuration in its examples.
+
 ## 🧰 Prerequisites
 
 Before starting, make sure you have:
-- **Have Foundry Installed** – [Foundry](https://book.getfoundry.sh/getting-started/installation)
 - **Node.js** – Install from [nodejs.org](https://nodejs.org/)
 - **Have an account with funds** – You can get DEV tokens for testing on Jovay once every 24 hours from the [Faucet](https://zan.top/faucet/jovay)
 - **Access to Jovay Devnet or Testnet** – To deploy and interact with your token, you will need to have your own endpoint and API key, which you can get from one of the supported [QuickStart](./developer-quickstart.md)
@@ -25,12 +34,92 @@ Before starting, make sure you have:
     tar -xvzf JovayExamples.tar.gz
     cd JovayExamples/hardhat/StakingExample/
     ```
-2. Install OpenZeppelin Contracts:
+2. Install dependencies:
     ```bash
     npm install
     ```
 
-## Step 2: Write the Token Contract
+## Step 2: Configure the Project
+Now that you have the project set up, the next step is to configure your Hardhat environment to connect to the Jovay network.
+
+### 1. (Optional) Generate a Private Key
+To deploy contracts, you need a wallet with a private key. If you don't have one, you can generate a new one.
+
+First, install `ethers.js` in your project (it might already be installed as a dependency of Hardhat):
+```bash
+npm i ethers
+```
+
+Next, create a file named `gen_eth_key.js` in your project root:
+```bash
+touch gen_eth_key.js
+```
+
+Paste the following code into `gen_eth_key.js`:
+```javascript
+const { ethers } = require('ethers');
+const wallet = ethers.Wallet.createRandom();
+console.log('Private Key:', wallet.privateKey);
+console.log('Address    :', wallet.address);
+```
+
+Run the script to generate a new keypair:
+```bash
+node gen_eth_key.js
+```
+
+The output will give you a new `Private Key` and `Address`. **Save these securely.** You will use the `Private Key` in the next step. Remember to also send some testnet funds to the new `Address` using the [Jovay Faucet](https://zan.top/faucet/jovay).
+
+### 2. Create a `.env` file
+Create a `.env` file in your project root to store your sensitive data. This allows you to configure both testnet and mainnet.
+```bash
+touch .env
+```
+
+Add your network RPC URLs and **wallet private keys** to the `.env` file. You can get the RPC URL from the table at the top of this guide. **Remember to never commit this file to version control.**
+```
+# Testnet Configuration
+JOVAY_TESTNET_RPC_URL="https://api.zan.top/public/jovay-testnet"
+TESTNET_PRIVATE_KEY="YOUR_TESTNET_WALLET_PRIVATE_KEY"
+
+# Mainnet Configuration (Optional)
+# JOVAY_MAINNET_RPC_URL="https://rpc.jovay.io"
+# MAINNET_PRIVATE_KEY="YOUR_MAINNET_WALLET_PRIVATE_KEY"
+```
+
+### 3. Install `dotenv`
+Install `dotenv` to allow Hardhat to read your environment variables.
+```bash
+npm install dotenv
+```
+
+### 4. Update `hardhat.config.js`
+Update `hardhat.config.js` to support multiple networks. Replace the entire content of your `hardhat.config.js` with the following code. This configuration points to the variables you just defined in your `.env` file.
+```javascript
+require("@nomicfoundation/hardhat-toolbox");
+require("dotenv").config();
+
+/** @type import('hardhat/config').HardhatUserConfig */
+module.exports = {
+  solidity: "0.8.20",
+  networks: {
+    jovay_mainnet: {
+      url: process.env.JOVAY_MAINNET_RPC_URL || "",
+      chainId: 5734951,
+      accounts:
+        process.env.MAINNET_PRIVATE_KEY !== undefined ? [process.env.MAINNET_PRIVATE_KEY] : [],
+    },
+    jovay_testnet: {
+      url: process.env.JOVAY_TESTNET_RPC_URL || "",
+      chainId: 2019775,
+      accounts:
+        process.env.TESTNET_PRIVATE_KEY !== undefined ? [process.env.TESTNET_PRIVATE_KEY] : [],
+    }
+  },
+};
+```
+
+## Step 3: Write the Token Contract
 1. Create a New Solidity File:
     ```bash
     touch contracts/MyToken.sol
@@ -64,7 +153,7 @@ Before starting, make sure you have:
     ```
 
 5. Paste the following code into `test/MyToken.js`:
-    ```js
+    ```javascript
     const { expect } = require("chai");
     const { ethers } = require("hardhat");
 
@@ -110,7 +199,7 @@ Before starting, make sure you have:
     npx hardhat test
     ```
 
-## Step 3: Write the Staking Contract
+## Step 4: Write the Staking Contract
 1. Create a New Solidity File:
     ```bash
     touch contracts/SimpleStaking.sol
@@ -209,7 +298,7 @@ Before starting, make sure you have:
     ```
 
 5. Paste the following code into `test/SimpleStaking.js`:
-    ```js
+    ```javascript
     const { expect } = require("chai");
     const { ethers } = require("hardhat");
     const { time } = require("@nomicfoundation/hardhat-network-helpers");
@@ -282,21 +371,22 @@ Before starting, make sure you have:
     npx hardhat test
     ```
 
-## Step 4: Deploy the Staking Contract
+## Step 5: Deploy the Staking Contract
 1. Create a Deployment Script:
     ```bash
     touch scripts/deploy.js
     ```
 2. Paste the following code into `scripts/deploy.js`:
-    ```js
+    ```javascript
     async function main() {
         const MyToken = await ethers.getContractFactory("MyToken");
-        const myToken = await MyToken.deploy(ethers.parseUnits("1000000", 6));
+        const gasLimit = 3_000_000; // or use estimated gas or default
+        const myToken = await MyToken.deploy(ethers.parseUnits("1000000", 6), { gasLimit: gasLimit });
         await myToken.waitForDeployment();
         console.log("MyToken deployed to:", await myToken.getAddress());
 
         const SimpleStaking = await ethers.getContractFactory("SimpleStaking");
-        const simpleStaking = await SimpleStaking.deploy(await myToken.getAddress());
+        const simpleStaking = await SimpleStaking.deploy(await myToken.getAddress(), { gasLimit: gasLimit });
         await simpleStaking.waitForDeployment();
         console.log("SimpleStaking deployed to:", await simpleStaking.getAddress());
     }
@@ -309,53 +399,9 @@ Before starting, make sure you have:
         });
     ```
 
-3. Update your `hardhat.config.js` with the following network settings:
-    <table class="responsive-table">
-    <thead>
-        <tr>
-            <th>Field</th>
-            <th>Value</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>chain_name</td>
-            <td>jovay</td>
-        </tr>
-        <tr>
-            <td>chain_id</td>
-            <td>2019775</td>
-        </tr>
-        <tr>
-            <td>url</td>
-            <td>your RPC url</td>
-        </tr>
-        <tr>
-            <td>accounts</td>
-            <td>your private key</td>
-        </tr>
-    </tbody>
-    </table>
-
-    ```json
-    require("@nomicfoundation/hardhat-toolbox");
-
-    /** @type import('hardhat/config').HardhatUserConfig */
-    module.exports = {
-        solidity: "0.8.20",
-        networks: {
-            jovay: {
-            url: "JOVAY_RPC_URL", // YOUR RPC URL
-            chainId: 2019775,
-            accounts: ["PRIVATE_KEY"],
-            },
-        },
-    };
-    ```
-
-4. Deploy the contract:
+3. Deploy the contract to the desired network. This example uses the testnet:
     ```bash
-    npx hardhat run scripts/deploy.js --network Jovay
+    npx hardhat run scripts/deploy.js --network jovay_testnet
     ```
     If your script's execution succeeds, your terminal should resemble the output below:
 
@@ -378,15 +424,3 @@ This guide gives you a foundation for building more complex staking systems, inc
 If you hit any issues, refer back to this guide or consult the official [Hardhat documentation](https://hardhat.org/docs).
 
 Happy coding! 🚀
-
-<style>
-  .responsive-table {
-    width: 100%;
-    border-collapse: collapse;
-    display: table !important;
-  }
-  .responsive-table th, .responsive-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-  }
-</style>

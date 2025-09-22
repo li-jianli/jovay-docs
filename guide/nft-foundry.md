@@ -10,6 +10,16 @@ By the end, you’ll have:
 - Experience deploying and verifying smart contracts
 - The skills to mint and interact with your NFTs programmatically
 
+Before you begin, please note the connection details for the network you are targeting:
+
+| Network | RPC URL | Chain ID |
+| --- | --- | --- |
+| Jovay Mainnet | `https://rpc.jovay.io` | `5734951` |
+| Jovay Testnet | `https://api.zan.top/public/jovay-testnet` | `2019775` |
+
+
+This guide will use the **Testnet** configuration in its examples.
+
 ## 🧰 Prerequisites
 
 Before starting, make sure you have:
@@ -32,7 +42,55 @@ Before starting, make sure you have:
     forge install OpenZeppelin/openzeppelin-contracts --no-git
     ```
 
-## Step 2: Write the NFT Contract
+## Step 2: Configure Your Environment
+Before writing the contract, it's best to set up your deployment environment.
+
+### 1. (Optional) Generate a Private Key
+To deploy contracts, you need a wallet with a private key. If you don't have one, you can generate a new one using `ethers.js`.
+
+First, install `ethers.js` in a temporary directory:
+
+```bash
+npm i ethers
+```
+
+Next, create and run a `gen_eth_key.js` script to get a new keypair.
+
+```javascript
+const { ethers } = require('ethers');
+const wallet = ethers.Wallet.createRandom();
+console.log('Private Key:', wallet.privateKey);
+console.log('Address    :', wallet.address);
+```
+
+Run the script:
+
+```bash
+node gen_eth_key.js
+```
+
+The output will give you a new `Private Key` and `Address`. **Save these securely.** You will use the `Private Key` in the next step. Remember to also send some testnet funds to the new `Address` using the [Jovay Faucet](https://zan.top/faucet/jovay).
+
+### 2. Set Environment Variables
+Foundry scripts read configuration like private keys and RPC URLs from environment variables. You can set them in your shell for the current session.
+
+For **Testnet** (as used in this guide's examples):
+
+```bash
+export PRIVATE_KEY="YOUR_TESTNET_WALLET_PRIVATE_KEY"
+export RPC_URL="https://api.zan.top/public/jovay-testnet"
+```
+
+For **Mainnet**:
+
+```bash
+export PRIVATE_KEY="YOUR_MAINNET_WALLET_PRIVATE_KEY"
+export RPC_URL="https://rpc.jovay.io"
+```
+
+> **Tip:** For a more permanent solution, you can add these `export` lines to your shell's profile file (e.g., `.bashrc`, `.zshrc`) or save them in a `.env` file and run `source .env` in your terminal before you start working.
+
+## Step 3: Write the NFT Contract
 1. Create a New Solidity File:
     ```bash
     touch src/MyNFT.sol
@@ -129,7 +187,9 @@ Before starting, make sure you have:
 
         // Test only owner can mint
         function testOnlyOwnerCanMint() public {
-            vm.expectRevert("OwnableUnauthorizedAccount(0x0000000000000000000000000000000000000002)");
+            vm.expectRevert(
+                abi.encodeWithSelector(Ownable.OwnableUnauthorizedAccount.selector, alice)
+            );
             vm.prank(alice);
             nft.mint(alice, TEST_URI);
         }
@@ -148,7 +208,10 @@ Before starting, make sure you have:
 
         // Test tokenURI reverts if queried for non-existent token
         function testTokenURIForNonExistentTokenFails() public {
-            vm.expectRevert("ERC721NonexistentToken(0)");
+            bytes4 ERC721_NONEXISTENT_TOKEN_SELECTOR =
+            bytes4(keccak256("ERC721NonexistentToken(uint256)"));
+            vm.expectRevert(abi.encodeWithSelector(ERC721_NONEXISTENT_TOKEN_SELECTOR, 0));
+
             nft.tokenURI(0); // tokenId 0 does not exist yet
         }
 
@@ -172,7 +235,7 @@ Before starting, make sure you have:
     forge test
     ```
 
-## Step 3: Deploy the NFT Contract
+## Step 4: Deploy the NFT Contract
 1. Create a Deployment Script:
     ```bash
     touch script/DeployMyNFT.s.sol
@@ -199,20 +262,15 @@ Before starting, make sure you have:
     }
     ```
 
-3. Set your wallet’s private key:
+3. Deploy the contract:
     ```bash
-    export PRIVATE_KEY=<your private key>
-    ```
-
-4. Deploy the contract:
-    ```bash
-    forge script script/DeployMyNFT.s.sol --rpc-url <JOVAY_RPC_URL> --broadcast
+    forge script script/DeployMyNFT.s.sol --rpc-url $RPC_URL --broadcast
     ```
     If your script's execution succeeds, your terminal should resemble the output below:
 
     ![Deploy Suucess](/Images/foundry-hardhat-tutorial/deploy-success-nft-foundry.png)
 
-## Step 4: Interact with the NFT Contract
+## Step 5: Interact with the NFT Contract
 1. Create a script:
     ```bash
     touch script/InteractMyNFT.s.sol
@@ -252,15 +310,14 @@ Before starting, make sure you have:
         }
     }
     ```
-3. Set your wallet’s private key and your NFT address:
+3. Set your NFT address:
     ```bash
-    export PRIVATE_KEY=<your private key>
     export NFT_ADDRESS=<your nft address>
     ```
 
 4. Execute the script:
     ```bash
-    forge script script/InteractMyNFT.s.sol --rpc-url <JOVAY_RPC_URL> --broadcast
+    forge script script/InteractMyNFT.s.sol --rpc-url $RPC_URL --broadcast
     ```
     If your script's execution succeeds, your terminal should resemble the output below:
 
@@ -282,4 +339,3 @@ This gives you the foundation to:
 If you hit any issues, refer back to this guide or consult the official [Foundry documentation](https://getfoundry.sh/introduction/overview).
 
 Happy coding! 🚀
-

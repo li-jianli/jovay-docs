@@ -10,6 +10,16 @@ By the end, you’ll have:
 - Build a staking contract that rewards users over time
 - Stake, claim rewards, and withdraw tokens programmatically
 
+Before you begin, please note the connection details for the network you are targeting:
+
+| Network | RPC URL | Chain ID |
+| --- | --- | --- |
+| Jovay Mainnet | `https://rpc.jovay.io` | `5734951` |
+| Jovay Testnet | `https://api.zan.top/public/jovay-testnet` | `2019775` |
+
+
+This guide will use the **Testnet** configuration in its examples.
+
 ## 🧰 Prerequisites
 
 Before starting, make sure you have:
@@ -32,7 +42,55 @@ Before starting, make sure you have:
     forge install OpenZeppelin/openzeppelin-contracts --no-git
     ```
 
-## Step 2: Write the Token Contract
+## Step 2: Configure Your Environment
+Before writing the contract, it's best to set up your deployment environment.
+
+### 1. (Optional) Generate a Private Key
+To deploy contracts, you need a wallet with a private key. If you don't have one, you can generate a new one using `ethers.js`.
+
+First, install `ethers.js` in a temporary directory:
+
+```bash
+npm i ethers
+```
+
+Next, create and run a `gen_eth_key.js` script to get a new keypair.
+
+```javascript
+const { ethers } = require('ethers');
+const wallet = ethers.Wallet.createRandom();
+console.log('Private Key:', wallet.privateKey);
+console.log('Address    :', wallet.address);
+```
+
+Run the script:
+
+```bash
+node gen_eth_key.js
+```
+
+The output will give you a new `Private Key` and `Address`. **Save these securely.** You will use the `Private Key` in the next step. Remember to also send some testnet funds to the new `Address` using the [Jovay Faucet](https://zan.top/faucet/jovay).
+
+### 2. Set Environment Variables
+Foundry scripts read configuration like private keys and RPC URLs from environment variables. You can set them in your shell for the current session.
+
+For **Testnet** (as used in this guide's examples):
+
+```bash
+export PRIVATE_KEY="YOUR_TESTNET_WALLET_PRIVATE_KEY"
+export RPC_URL="https://api.zan.top/public/jovay-testnet"
+```
+
+For **Mainnet**:
+
+```bash
+export PRIVATE_KEY="YOUR_MAINNET_WALLET_PRIVATE_KEY"
+export RPC_URL="https://rpc.jovay.io"
+```
+
+> **Tip:** For a more permanent solution, you can add these `export` lines to your shell's profile file (e.g., `.bashrc`, `.zshrc`) or save them in a `.env` file and run `source .env` in your terminal before you start working.
+
+## Step 3: Write the Token Contract
 1. Create a New Solidity File:
     ```bash
     touch src/MyToken.sol
@@ -130,12 +188,12 @@ Before starting, make sure you have:
     forge test
     ```
 
-## Step 3: Deploy the Token Contract
+## Step 4: Deploy the Token Contract
 1. Create a Deployment Script:
     ```bash
     touch script/DeployMyToken.s.sol
     ```
-2. Paste the following code into `script/DeployToken.s.sol`:
+2. Paste the following code into `script/DeployMyToken.s.sol`:
     ```solidity
     // SPDX-License-Identifier: MIT
     pragma solidity ^0.8.20;
@@ -157,20 +215,15 @@ Before starting, make sure you have:
     }
     ```
 
-3. Set your wallet’s private key:
+3. Deploy the contract:
     ```bash
-    export PRIVATE_KEY=<your private key>
-    ```
-
-4. Deploy the contract:
-    ```bash
-    forge script script/DeployMyToken.s.sol --rpc-url <JOVAY_RPC_URL> --broadcast
+    forge script script/DeployMyToken.s.sol --rpc-url $RPC_URL --broadcast
     ```
     If your script's execution succeeds, your terminal should resemble the output below:
 
     ![Deploy Suucess](/Images/foundry-hardhat-tutorial/deploy-success-contract-foundry.png)
 
-## Step 4: Write the Staking Contract
+## Step 5: Write the Staking Contract
 1. Create a New Solidity File:
     ```bash
     touch src/SimpleStaking.sol
@@ -338,7 +391,7 @@ Before starting, make sure you have:
     forge test
     ```
 
-## Step 5: Deploy the Staking Contract
+## Step 6: Deploy the Staking Contract
 1. Create a Deployment Script:
     ```bash
     touch script/DeploySimpleStaking.s.sol
@@ -368,21 +421,20 @@ Before starting, make sure you have:
     }
     ```
 
-3. Set your wallet’s private key and token address:
+3. Set your token address:
     ```bash
-    export PRIVATE_KEY=<your private key>
     export TOKEN_ADDRESS=<your token address>
     ```
 
 4. Deploy the contract:
     ```bash
-    forge script script/DeploySimpleStaking.s.sol --rpc-url <JOVAY_RPC_URL> --broadcast
+    forge script script/DeploySimpleStaking.s.sol --rpc-url $RPC_URL --broadcast
     ```
     If your script's execution succeeds, your terminal should resemble the output below:
 
     ![Deploy Staking Contract Success](/Images/foundry-hardhat-tutorial/deploy-success-staking-contract-foundry.png)
 
-## Step 6: Interact with the Staking Contract
+## Step 7: Interact with the Staking Contract
 1. Create a script:
     ```bash
     touch script/InteractSimpleStaking.s.sol
@@ -433,16 +485,15 @@ Before starting, make sure you have:
         }
     }
     ```
-3. Set your wallet’s private key, token address and staking address:
+3. Set your token address and staking address:
     ```bash
-    export PRIVATE_KEY=<your private key>
     export TOKEN_ADDRESS=<your token address>
     export STAKING_ADDRESS=<your staking address>
     ```
 
-3. Execute the script:
+4. Execute the script:
     ```bash
-    forge script script/InteractSimpleStaking.s.sol --rpc-url <JOVAY_RPC_URL> --broadcast
+    forge script script/InteractSimpleStaking.s.sol --rpc-url $RPC_URL --broadcast
     ```
     If your script's execution succeeds, your terminal should resemble the output below:
 
@@ -470,6 +521,3 @@ Now you can expand this system with features like:
 If you hit any issues, refer back to this guide or consult the official [Foundry documentation](https://getfoundry.sh/introduction/overview/).
 
 Happy coding! 🚀
-
-
-
