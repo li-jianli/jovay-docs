@@ -22,74 +22,124 @@ For a simple and secure user experience, we strongly recommend using the officia
 
 ```json
 [
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "to_",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "amount_",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "gasLimit_",
-        "type": "uint256"
-      },
-      {
-        "internalType": "bytes",
-        "name": "data_",
-        "type": "bytes"
-      }
-    ],
-    "name": "deposit",
-    "outputs": [],
-    "stateMutability": "payable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "value_",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "nonce_",
-        "type": "uint256"
-      },
-      {
-        "internalType": "bytes",
-        "name": "msg_",
-        "type": "bytes"
-      },
-      {
-        "components": [
-          {
-            "internalType": "uint256",
-            "name": "batchIndex",
-            "type": "uint256"
-          },
-          {
-            "internalType": "bytes",
-            "name": "merkleProof",
-            "type": "bytes"
-          }
-        ],
-        "internalType": "struct IL1ETHBridge.L2MsgProof",
-        "name": "proof_",
-        "type": "tuple"
-      }
-    ],
-    "name": "relayMsgWithProof",
-    "outputs": [],
-    "stateMutability": "payable",
-    "type": "function"
-  }
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "msg",
+				"type": "bytes"
+			}
+		],
+		"name": "DepositETH",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "msg",
+				"type": "bytes"
+			}
+		],
+		"name": "FinalizeWithdrawETH",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "to_",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount_",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "gasLimit_",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes",
+				"name": "data_",
+				"type": "bytes"
+			}
+		],
+		"name": "deposit",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sender_",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "to_",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "value_",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes",
+				"name": "msg_",
+				"type": "bytes"
+			}
+		],
+		"name": "finalizeWithdraw",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	}
 ]
 ```
 </details>
@@ -105,43 +155,166 @@ For a simple and secure user experience, we strongly recommend using the officia
 
 ```json
 [
-    {
-        "inputs": [
-            {
-                "internalType": "address",
-                "name": "to_",
-                "type": "address"
-            },
-            {
-                "internalType": "uint256",
-                "name": "amount_",
-                "type": "uint256"
-            },
-            {
-                "internalType": "uint256",
-                "name": "gasLimit_",
-                "type": "uint256"
-            },
-            {
-                "internalType": "bytes",
-                "name": "data_",
-                "type": "bytes"
-            }
-        ],
-        "name": "withdraw",
-        "outputs": [],
-        "stateMutability": "payable",
-        "type": "function"
-    }
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "msg",
+				"type": "bytes"
+			}
+		],
+		"name": "FinalizeDepositETH",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "from",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "to",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "msg",
+				"type": "bytes"
+			}
+		],
+		"name": "WithdrawETH",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes",
+				"name": "msg_",
+				"type": "bytes"
+			}
+		],
+		"name": "claimDeposit",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes",
+				"name": "msg_",
+				"type": "bytes"
+			},
+			{
+				"internalType": "address",
+				"name": "new_refund_address_",
+				"type": "address"
+			}
+		],
+		"name": "claimDeposit",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "sender_",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "to_",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount_",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes",
+				"name": "data_",
+				"type": "bytes"
+			}
+		],
+		"name": "finalizeDeposit",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "to_",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount_",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "gasLimit_",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bytes",
+				"name": "data_",
+				"type": "bytes"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	}
 ]
 ```
 </details>
 
 ## Core Workflows
 ### Deposit: L1 to L2
+
+#### Step 1: Initiate Deposit on L1
 To deposit ETH from Layer 1 to Layer 2, call the `deposit` function on the **L1 Bridge Contract**.
 
-#### `deposit`
+##### `deposit`
 ```solidity
 function deposit(
     address to_,
@@ -157,12 +330,29 @@ function deposit(
 | :--- | :--- | :--- |
 | `to_` | `address` | The recipient address on Jovay (L2). |
 | `amount_` | `uint256` | The amount of ETH (in wei) to deposit. |
-| `gasLimit_` | `uint256` | The gas limit for the corresponding transaction on L2.  |
+| `gasLimit_` | `uint256` | The gas limit for the corresponding transaction on L2. |
 | `data_` | `bytes` | Optional data to pass with the message. Can be `0x` for a standard ETH deposit. |
-| `value` | `payable` | The `msg.value` of the L1 transaction must be `>= amount_ + (gasLimit_ * l2GasPrice)`. The `l2GasPrice` is currently `1 Gwei` (`1e9` wei) on the testnet. |
+| `value` | `payable` | The `msg.value` of the L1 transaction must be `>= amount_ + (gasLimit_ * l2GasPrice)`. |
 
+After the L1 transaction is finalized, the bridge relayer should automatically call `finalizeDeposit` on L2 to credit the funds to the recipient.
 
-After the L1 transaction is finalized (15-20 minutes), the funds will be credited to the recipient on L2.
+#### Step 2 (Optional): Manually Claim Deposit on L2
+In the rare event that the automated deposit does not arrive in your L2 account after a reasonable time, you can manually trigger the finalization.
+
+To do this, call the `claimDeposit` function on the **L2 Bridge Contract**.
+
+##### `claimDeposit`
+```solidity
+function claimDeposit(bytes memory msg_) external;
+```
+
+This function allows a user to manually claim their assets on L2 if the automatic deposit relay fails.
+
+**Parameters:**
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| `msg_` | `bytes` | The original message data from the `DepositETH` event log of your L1 deposit transaction. You can find this in the transaction details on an L1 block explorer. |
 
 ---
 
@@ -204,7 +394,6 @@ struct L2MsgProof {
     uint256 batchIndex;
     bytes merkleProof;
 }
-
 function relayMsgWithProof(
     uint256 value_,
     uint256 nonce_,
