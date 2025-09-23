@@ -4,7 +4,7 @@ outline: deep
 # Jovay Terms of Service
 **Version Number: 1.00**
 
-**Last Updated: [25] September 2025**
+**Last Updated: 25 September 2025**
 
 **<u>IMPORTANT NOTICE</u>: BY ACCESSING, INTERACTING WITH OR USING ANY OF THE SERVICES, YOU AGREE THAT YOU ARE ABLE TO ENTER INTO A BINDING AGREEMENT AND, AS SUCH, HAVE READ, UNDERSTOOD, AND AGREE TO BE BOUND BY THIS AGREEMENT, INCLUDING THE BINDING ARBITRATION AGREEMENT AND CLASS ACTION WAIVER IN SECTION 12. IF YOU DO NOT AGREE TO ANY PART OF THIS AGREEMENT, YOU ARE NOT AUTHORIZED TO INTERACT WITH, ACCESS OR USE ANY SERVICE, INTERFACE OR FEATURE.**
 
@@ -244,9 +244,9 @@ We will provide you with prompt notice of any claim subject to indemnification u
 
 You expressly acknowledge and agree that you assume all risks associated with your access to and use of the Services, including your interaction with Jovay or Jovay Bridge. To the maximum extent permitted by law, you hereby irrevocably waive and release the Jovay Parties from any and all liability, claims, causes of action, or damages of any kind or nature, whether known or unknown, arising out of or in any way connected with your use of the Services, Jovay or Jovay Bridge.
 
-### 8.2	Intellectual Property
-8.2	If you are a resident of a jurisdiction where there are protections by statute, regulation or common law doctrine that may limit the scope of a general release to include only those claims known or suspected to exist at the time of the release, you hereby expressly waive the applicability of such provisions.
+If you are a resident of a jurisdiction where there are protections by statute, regulation or common law doctrine that may limit the scope of a general release to include only those claims known or suspected to exist at the time of the release, you hereby expressly waive the applicability of such provisions.
 
+### 8.2	Intellectual Property
 You will defend the Jovay Parties against any third-party claim alleging that any of Your Content infringes or misappropriates that third party’s intellectual property rights, and will pay the amount of any adverse final judgment or settlement.
 
 We have no obligations or liability under this section arising from infringement by you combining the Services with any other product, service, software, data, content, or method. In addition, we will have no obligations or liability arising from your use of the Services after we have notified you to discontinue such use.

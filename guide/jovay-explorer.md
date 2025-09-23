@@ -2,6 +2,9 @@
 outline: deep
 ---
 # Blockchain Explorer
+
+The official Jovay Block Explorer is available at: **[explorer.jovay.io](https://explorer.jovay.io/)**
+
 ## Blockchain Explorer Overview
 **Jovay** delivers a user-friendly, fully customizable blockchain explorer tailored for **Layer 2 ecosystems**, offering multi-dimensional visualization capabilities to enhance transparency and traceability.
 
@@ -25,11 +28,6 @@ outline: deep
 ## Observable System
 Jovay observation system allows end users and developers to view transactions, prove system latency, and service call throughput in a visual way. The query capability supports observing and understanding the calling relationships and link duration of Layer2 system components, assisting developers in analyzing software performance and transaction behavior, and viewing the application and operation of the Layer2 network in a more three-dimensional way.
 
-![Observable System](/Images/DTVM/observable-system.png)
-<p align="center">
-  <span style="font-size: 14px;">Figure 2: Observable System</span>
-</p>
-
 Based on the link observation provided by the original Open Telemetry (OTEL), the observation system has expanded the capabilities of data statistics and link analysis, allowing end users to obtain observation information and statistical information through API/front-end UI and terminal programs through API.
 1. **Easy integration:** Provides Agent with rich development languages, allowing low-code application programs to insert piles and meta information tags at specific locations. Layer2 components identify specific stages of the transaction life cycle on Layer2 based on this feature.
 2. **Link observation:** The observation system collects link information reported by components based on the native OTEL collector and provides link query.
@@ -38,5 +36,5 @@ Based on the link observation provided by the original Open Telemetry (OTEL), th
 
 ![Observable System Architecture](/Images/DTVM/Observable%20System%20Architecture.png)
 <p align="center">
-  <span style="font-size: 14px;">Figure 3: Observable System Architecture</span>
+  <span style="font-size: 14px;">Figure 2: Observable System Architecture</span>
 </p>

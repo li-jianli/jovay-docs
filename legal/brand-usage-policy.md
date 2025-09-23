@@ -4,7 +4,7 @@ outline: deep
 
 # Brand Usage Policy for Jovay
 
-**Last updated: [25] September 2025**
+**Last updated: 25 September 2025**
 
 Jovay Labs has developed these brand usage policy (the “**Policy**”) to ensure that the brand assets of Jovay (including without limitation, the name, logo, trademarks, image, symbols and any related designs of Jovay, the “**Brand Assets**”) are properly displayed and used. As the owner of the Brand Assets, Jovay Labs has exclusive rights to use the Brand Assets and will prevent others from using the Brand Assets inappropriately. When you use any of the Brand Assets, we expect you will comply in all respects with the requirements and conditions set forth herein and in any other guidelines promulgated by Jovay Labs. Nothing contained in this Policy should be construed as granting, by implication, estoppel, or otherwise, any license or right in and to the Brand Assets or other intellectual property owned by Jovay Labs. Unauthorized use of any Brand Assets or any other intellectual property of Jovay Labs may violate the law. All rights not expressly granted herein are reserved by Jovay Labs.
 

@@ -3,7 +3,7 @@ outline: deep
 ---
 
 # Website Privacy Policy of Jovay
-**Last Updated Date: [25] September 2025**
+**Last Updated Date: 25 September 2025**
 
 This Privacy Policy (this “**Policy**”) explains how Jovay Labs Company Limited (“J**ovay**” or “**we**”) may collect, use, disclose and protect personal data through our portal website ("**Site**") in connection with your access and/or use of the Site. 
 
