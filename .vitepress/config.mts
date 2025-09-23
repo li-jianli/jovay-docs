@@ -115,7 +115,8 @@ export default defineConfig({
         text: "Resources",
         collapsed: false,
         items: [
-          { text: "Jovay Testnet Explorer", link: "/guide/jovay-explorer" },
+          { text: "Jovay Explorer", link: "/guide/jovay-explorer" },
+          { text: "Jovay Testnet Explorer", link: "https://sepolia-explorer.jovay.io/l2" },
           { text: "Audit Reports", link: "/resources/audit-reports" },
           { text: "Auxiliary Contracts", link: "/resources/auxiliary-contracts" },
         ],
