@@ -111,14 +111,13 @@ export default defineConfig({
           { text: "Developer Guide", link: "/guide/developer-guide" },
           { text: "Developer Quickstart", link: "/guide/developer-quickstart" },
           { text: "Jovay Bridge DApp Tutorial", link: "/guide/jovay-bridge-dapp-tutorial" },
+          { text: "Jovay Explorer", link: "/guide/jovay-explorer" },
         ],
       },
       {
         text: "Resources",
         collapsed: false,
         items: [
-          { text: "Jovay Explorer", link: "/guide/jovay-explorer" },
-          { text: "Jovay Testnet Explorer", link: "https://sepolia-explorer.jovay.io/l2" },
           { text: "Audit Reports", link: "/resources/audit-reports" },
           { text: "Auxiliary Contracts", link: "/resources/auxiliary-contracts" },
         ],
