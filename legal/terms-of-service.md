@@ -53,21 +53,38 @@ Subject to this Agreement, we grant you a limited license to access and use the 
 
 The Services are intended for your internal use only. The rights granted to you in this Agreement are subject to the following restrictions:
 
-<div style="margin-left: 2em;">(a)	you shall not license, sell, rent, lease, transfer, assign, reproduce, distribute, host, or otherwise commercially exploit the Services or any portion of the Services or Jovay;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">
+(a)&nbsp;&nbsp;you shall not license, sell, rent, lease, transfer, assign, reproduce, distribute, host, or otherwise commercially exploit the Services or any portion of the Services or Jovay;</div><br>
 
-<div style="margin-left: 2em;">(b)	you shall not frame or use framing techniques to enclose any trademark, logo, or other Services (including images, text, page layout or form) of Jovay, Jovay Bridge or Jovay Labs;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(b)&nbsp;&nbsp;you shall not frame or use framing techniques to enclose any trademark, logo, or other Services (including images, text, page layout or form) of Jovay, Jovay Bridge or Jovay Labs;
+</div><br>
 
-<div style="margin-left: 2em;">(c)	you shall not use any metatags or other “hidden text” using Jovay’s or Jovay Bridge’s name or trademarks;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(c)&nbsp;&nbsp;you shall not use any metatags or other “hidden text” using Jovay’s or Jovay Bridge’s name or trademarks;
+</div><br>
 
-<div style="margin-left: 2em;">(d)	you shall not modify, translate, adapt, merge, make derivative works of, disassemble, decompile, reverse compile, or reverse engineer any part of the Services, except to the extent the foregoing restrictions are expressly prohibited by applicable law;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(d)&nbsp;&nbsp;you shall not modify, translate, adapt, merge, make derivative works of, disassemble, decompile, reverse compile, or reverse engineer any part of the Services, except to the extent the foregoing restrictions are expressly prohibited by applicable law;
+</div><br>
 
-<div style="margin-left: 2em;">(e)	you shall not use any manual or automated software, devices, or other processes (including spiders, robots, scrapers, crawlers, avatars, and data mining tools) to “scrape” or download data from any web pages relating to Jovay or Jovay Bridge (provided that we may grant the operators of public search engines revocable permission to use spiders to copy materials relating to Jovay or Jovay Bridge to create publicly available searchable indices of the materials);</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(e)&nbsp;&nbsp;you shall not use any manual or automated software, devices, or other processes (including spiders, robots, scrapers, crawlers, avatars, and data mining tools) to “scrape” or download data from any web pages relating to Jovay or Jovay Bridge (provided that we may grant the operators of public search engines revocable permission to use spiders to copy materials relating to Jovay or Jovay Bridge to create publicly available searchable indices of the materials);
+</div><br>
 
-<div style="margin-left: 2em;">(f)	except as expressly stated herein, no part of the Services may be copied, reproduced, distributed, republished, downloaded, displayed, posted, or transmitted in any form or by any means;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(f)&nbsp;&nbsp;except as expressly stated herein, no part of the Services may be copied, reproduced, distributed, republished, downloaded, displayed, posted, or transmitted in any form or by any means
+</div><br>
 
-<div style="margin-left: 2em;">(g)	you shall not remove or destroy any copyright notices or other proprietary markings contained on or in the Services; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(g)&nbsp;&nbsp;you shall not remove or destroy any copyright notices or other proprietary markings contained on or in the Services; and
+</div><br>
 
-<div style="margin-left: 2em;">(h)	any future release, update, or other addition to the Services shall be subject to this Agreement.</div>
+<div style="margin-left: 2em; text-indent: -2em;">
+(h)&nbsp;&nbsp;any future release, update, or other addition to the Services shall be subject to this Agreement.
+</div>
+</div>
 
 We, our suppliers and service providers reserve all rights not granted in this section. Any unauthorized use of the Services may result in the immediate termination of any and all licenses, consents or permissions granted pursuant to this Agreement.
 
@@ -75,15 +92,28 @@ If you provide any Suggestions to us or our Affiliates, we and our Affiliates wi
 
 ### 2.3	Eligibility
 To be eligible to use the Services, you must:
-<div style="margin-left: 2em;">(a)	be a person with full power, capacity and authority;</div><br>
 
-<div style="margin-left: 2em;">(b)	not be accessing the Services in a jurisdiction where such Services are not permitted, restricted or illegal;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">
+(a)&nbsp;&nbsp;be a person with full power, capacity and authority;
+</div><br>
 
-<div style="margin-left: 2em;">(c)	not be prohibited, restricted, unauthorized or ineligible to use the Services in any form or by any means (in whole or in part) as a result of this Agreement, legal or regulatory requirements, including by reason of being a person who is included in any trade embargoes or economic sanctions or terrorist list such as the Office of Foreign Assets Control of the U.S. Department of the Treasury (OFAC), the denied persons or entity list of the U.S. Department of Commerce;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(b)&nbsp;&nbsp;not be accessing the Services in a jurisdiction where such Services are not permitted, restricted or illegal;
+</div><br>
 
-<div style="margin-left: 2em;">(d)	not be designated on any list of prohibited or restricted parties, including lists maintained by the United Nations Security Council, the U.S. Government (i.e., the Specially Designated Nationals List and Foreign Sanctions Evaders List of the U.S. Department of Treasury and the Entity List of the U.S. Department of Commerce), the European Union or its member states, the United Kingdom, or other applicable government authority; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(c)&nbsp;&nbsp;not be prohibited, restricted, unauthorized or ineligible to use the Services in any form or by any means (in whole or in part) as a result of this Agreement, legal or regulatory requirements, including by reason of being a person who is included in any trade embargoes or economic sanctions or terrorist list such as the Office of Foreign Assets Control of the U.S. Department of the Treasury (OFAC), the denied persons or entity list of the U.S. Department of Commerce;
+</div><br>
 
-<div style="margin-left: 2em;">(e)	not be a person who is located, a citizen of, or a resident of a country, jurisdiction or region subject to sanctions by United Nations, the U.S. Government, the European Union or its member states, the United Kingdom, People’s Republic of China, the Hong Kong Special Administrative Region of the People’s Republic of China or other applicable government authority;</div>
+<div style="margin-left: 2em; text-indent: -2em;">
+(d)&nbsp;&nbsp;not be designated on any list of prohibited or restricted parties, including lists maintained by the United Nations Security Council, the U.S. Government (i.e., the Specially Designated Nationals List and Foreign Sanctions Evaders List of the U.S. Department of Treasury and the Entity List of the U.S. Department of Commerce), the European Union or its member states, the United Kingdom, or other applicable government authority; and
+</div><br>
+
+<div style="margin-left: 2em; text-indent: -2em;">
+(e)&nbsp;&nbsp;not be a person who is located, a citizen of, or a resident of a country, jurisdiction or region subject to sanctions by United Nations, the U.S. Government, the European Union or its member states, the United Kingdom, People’s Republic of China, the Hong Kong Special Administrative Region of the People’s Republic of China or other applicable government authority;
+</div>
+</div>
 
 In addition, certain Services may not be available in certain other regions or jurisdictions, as determined by us from time to time in our sole and absolute discretion.
 
@@ -98,11 +128,19 @@ We reserve the right, at our sole and absolute discretion, to modify or replace 
 ### 4.1	Use of the Services
 For any Services provided by Jovay Labs, whether accessed via our Site, developer APIs, SDKs, graphical interfaces, or other integration methods, and except to the extent caused by our breach of this Agreement:
 
-<div style="margin-left: 2em;">(a)	you are responsible for all activities that occur through your use of the Services, whether undertaken by you, your employees, contractors, agents, or any third party acting on your behalf;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">
+(a)&nbsp;&nbsp;you are responsible for all activities that occur through your use of the Services, whether undertaken by you, your employees, contractors, agents, or any third party acting on your behalf;
+</div><br>
 
-<div style="margin-left: 2em;">(b)	you will ensure that your use of the Services does not violate any applicable law; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(b)&nbsp;&nbsp;you will ensure that your use of the Services does not violate any applicable law; and
+</div><br>
 
-<div style="margin-left: 2em;">(c)	Jovay Labs and its Affiliates are not responsible for unauthorized access to or misuse of the Services, including any unauthorized use of your blockchain addresses, Wallet credentials, API keys, or other integration credentials, whether resulting from fraud, phishing, social engineering, malware, or any other malicious activity perpetrated by third parties.</div>
+<div style="margin-left: 2em; text-indent: -2em;">
+(c)&nbsp;&nbsp;Jovay Labs and its Affiliates are not responsible for unauthorized access to or misuse of the Services, including any unauthorized use of your blockchain addresses, Wallet credentials, API keys, or other integration credentials, whether resulting from fraud, phishing, social engineering, malware, or any other malicious activity perpetrated by third parties.
+</div>
+</div>
 
 ### 4.2	Security and Configuration
 You are solely responsible for properly configuring and using the Services, including integrating with the Protocol in a secure manner, and for taking appropriate measures to secure, protect, and back up any information, credentials, private keys, smart contract code, or configuration files you use in connection with the Services. Jovay Labs does not store or have access to your private keys, Wallet credentials, or other authentication mechanisms used to interact with the Protocol. You are solely responsible for maintaining the security of such credentials and any associated blockchain accounts.
@@ -110,73 +148,139 @@ You are solely responsible for properly configuring and using the Services, incl
 ### 4.3	Interaction with Blockchain Protocols and Smart Contracts
 The Services may enable you to interact with Jovay, Jovay Bridge and other blockchain protocols, including by deploying or interacting with smart contracts, transferring assets, bridging assets to or from other chains, or engaging with decentralized applications. You are solely responsible for:
 
-<div style="margin-left: 2em;">(a)	ensuring that any smart contract code you deploy or interact with is secure, functional, and compliant with applicable laws;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">
+(a)&nbsp;&nbsp;ensuring that any smart contract code you deploy or interact with is secure, functional, and compliant with applicable laws;
+</div><br>
 
-<div style="margin-left: 2em;">(b)	validating and approving any blockchain transactions you sign; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(b)&nbsp;&nbsp;validating and approving any blockchain transactions you sign; and
+</div><br>
 
-<div style="margin-left: 2em;">(c)	understanding and accepting the risks associated with interacting with blockchain protocols, including irreversible transactions, potential vulnerabilities in smart contract code, and loss of access to assets due to misconfiguration or error. Jovay Labs does not execute transactions on your behalf and has no custody or control over your assets or private keys.</div>
+<div style="margin-left: 2em; text-indent: -2em;">
+(c)&nbsp;&nbsp;understanding and accepting the risks associated with interacting with blockchain protocols, including irreversible transactions, potential vulnerabilities in smart contract code, and loss of access to assets due to misconfiguration or error. Jovay Labs does not execute transactions on your behalf and has no custody or control over your assets or private keys.
+</div>
+</div>
 
 ### 4.4	Your Representations and Warranties
 By using the Services, you represent and warrant to us:
 
-<div style="margin-left: 2em;">(a)	that you understand the risks associated with using the Services, that you are not prohibited or restricted from accessing the Site or using the Services by section 2.4 of this Agreement, and that you are not otherwise prohibited by applicable laws from using, or acting for the benefit of another person that is prohibited or restricted from using, the Site or the Services;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">
+(a)&nbsp;&nbsp;that you understand the risks associated with using the Services, that you are not prohibited or restricted from accessing the Site or using the Services by section 2.4 of this Agreement, and that you are not otherwise prohibited by applicable laws from using, or acting for the benefit of another person that is prohibited or restricted from using, the Site or the Services;
+</div><br>
 
-<div style="margin-left: 2em;">(b)	that you have had the opportunity to seek legal, accounting, taxation and other professional advice regarding this Agreement and the Services;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(b)&nbsp;&nbsp;that you have had the opportunity to seek legal, accounting, taxation and other professional advice regarding this Agreement and the Services;
+</div><br>
 
-<div style="margin-left: 2em;">(c)	that you are currently in compliance with, and must, at your own cost and expense, comply with all laws that relate to or affect the Services, including laws related to anti-money laundering, counter-terrorism financing, anti-corruption, economic sanctions, tax information exchange and other tax laws, and that you consent to any and all tax and information reporting under all such laws as we may reasonably determine;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(c)&nbsp;&nbsp;that you are currently in compliance with, and must, at your own cost and expense, comply with all laws that relate to or affect the Services, including laws related to anti-money laundering, counter-terrorism financing, anti-corruption, economic sanctions, tax information exchange and other tax laws, and that you consent to any and all tax and information reporting under all such laws as we may reasonably determine;
+</div><br>
 
-<div style="margin-left: 2em;">(d)	that you have not (i) violated; (ii) been fined, debarred, sanctioned, been the subject of economic sanctions-related restrictions, or otherwise penalized under; (iii) received any oral or written notice from any government or official concerning actual or possible violation by you under; or (iv) received any other report that you are the subject or target of sanctions, restrictions, penalties, or enforcement action or investigation under, any laws;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(d)&nbsp;&nbsp;that you have not (i) violated; (ii) been fined, debarred, sanctioned, been the subject of economic sanctions-related restrictions, or otherwise penalized under; (iii) received any oral or written notice from any government or official concerning actual or possible violation by you under; or (iv) received any other report that you are the subject or target of sanctions, restrictions, penalties, or enforcement action or investigation under, any laws;
+</div><br>
 
-<div style="margin-left: 2em;">(e)	that you will not falsify any Site, Services or account registration or administration details provided to us;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(e)&nbsp;&nbsp;that you will not falsify any Site, Services or account registration or administration details provided to us;
+</div><br>
 
-<div style="margin-left: 2em;">(f)	that you will not falsify or materially omit any information or provide misleading or inaccurate information requested by us in the course of, directly or indirectly relating to, or arising from your activities on the Site or use of any Services, including at registration or during administration or other due diligence processes, and that if any information provided to us becomes incorrect or outdated, including information relating to your ownership, you will promptly provide corrected information to us;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(f)&nbsp;&nbsp;that you will not falsify or materially omit any information or provide misleading or inaccurate information requested by us in the course of, directly or indirectly relating to, or arising from your activities on the Site or use of any Services, including at registration or during administration or other due diligence processes, and that if any information provided to us becomes incorrect or outdated, including information relating to your ownership, you will promptly provide corrected information to us;
+</div><br>
 
-<div style="margin-left: 2em;">(g)	that you acknowledge and agree that any instructions received or undertaken through the Site with your login credentials or from your authorized e-mail address on file with us are deemed to be valid, binding, and conclusive regardless of whether there is any error resulting from an instruction made by you or on your behalf, any error resulting, directly or indirectly, from fraud or the duplication of any instruction made by you or on your behalf or the malfunction of any device or compromise of credentials used by you to deliver instructions and that we may act upon those instructions without any liability or responsibility attaching to us;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(g)&nbsp;&nbsp;that you acknowledge and agree that any instructions received or undertaken through the Site with your login credentials or from your authorized e-mail address on file with us are deemed to be valid, binding, and conclusive regardless of whether there is any error resulting from an instruction made by you or on your behalf, any error resulting, directly or indirectly, from fraud or the duplication of any instruction made by you or on your behalf or the malfunction of any device or compromise of credentials used by you to deliver instructions and that we may act upon those instructions without any liability or responsibility attaching to us;
+</div><br>
 
-<div style="margin-left: 2em;">(h)	that you will fairly and promptly report all income associated with your activity on the Site pursuant to applicable laws and pay any and all taxes thereon;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(h)&nbsp;&nbsp;that you will fairly and promptly report all income associated with your activity on the Site pursuant to applicable laws and pay any and all taxes thereon;
+</div><br>
 
-<div style="margin-left: 2em;">(i)	that you will determine whether taxes apply to any transactions you initiate or receive and, if so, to report and/or remit the correct tax to the appropriate tax authority;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(i)&nbsp;&nbsp;that you will determine whether taxes apply to any transactions you initiate or receive and, if so, to report and/or remit the correct tax to the appropriate tax authority;
+</div><br>
 
-<div style="margin-left: 2em;">(j)	that you are not subject to a User Insolvency Event, and have no reason to believe that you will be subject to a User Insolvency Event in the following six (6) months;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(j)&nbsp;&nbsp;that you are not subject to a User Insolvency Event, and have no reason to believe that you will be subject to a User Insolvency Event in the following six (6) months;
+</div><br>
 
-<div style="margin-left: 2em;">(k)	that if you are acting on behalf of a DAO or other person, whether or not such person is formally incorporated, you represent and warrant that you have all right and authority necessary to act on behalf of such person;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(k)&nbsp;&nbsp;that if you are acting on behalf of a DAO or other person, whether or not such person is formally incorporated, you represent and warrant that you have all right and authority necessary to act on behalf of such person;
+</div><br>
 
-<div style="margin-left: 2em;">(l)	that none of (i) you; (ii) any Affiliate of any person on behalf of which you are using the Services; (iii) any other person having a beneficial interest in any person on behalf of which you are using the Services; or (iv) any person for whom you are acting as an agent or nominee in connection with the Services, is a senior foreign political figure, or any immediate family member or close associate of a senior foreign political figure;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(l)&nbsp;&nbsp;that none of (i) you; (ii) any Affiliate of any person on behalf of which you are using the Services; (iii) any other person having a beneficial interest in any person on behalf of which you are using the Services; or (iv) any person for whom you are acting as an agent or nominee in connection with the Services, is a senior foreign political figure, or any immediate family member or close associate of a senior foreign political figure;
+</div><br>
 
-<div style="margin-left: 2em;">(m)	that there is no legal proceeding pending that relates to your activities relating to buying, selling, staking, or otherwise using Digital Asset trading or blockchain technology related activities;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(m)&nbsp;&nbsp;that there is no legal proceeding pending that relates to your activities relating to buying, selling, staking, or otherwise using Digital Asset trading or blockchain technology related activities;
+</div><br>
 
-<div style="margin-left: 2em;">(n)	that you have not failed to comply with, and have not violated, any applicable legal requirement relating to any blockchain technologies or Digital Asset-related activities, and no investigation or review by any governmental entity is pending or, to your knowledge, has been threatened against or with respect to you, nor does any government order or action prohibit you or any of your representatives from engaging in or continuing any conduct, activity or practice relating to any Digital Assets; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(n)&nbsp;&nbsp;that you have not failed to comply with, and have not violated, any applicable legal requirement relating to any blockchain technologies or Digital Asset-related activities, and no investigation or review by any governmental entity is pending or, to your knowledge, has been threatened against or with respect to you, nor does any government order or action prohibit you or any of your representatives from engaging in or continuing any conduct, activity or practice relating to any Digital Assets; and
+</div><br>
 
-<div style="margin-left: 2em;">(o)	that you will accurately and promptly inform us if you know or have reason to know whether any of the foregoing representations or warranties is no longer correct or becomes incorrect.</div>
+<div style="margin-left: 2em; text-indent: -2em;">
+(o)&nbsp;&nbsp;that you will accurately and promptly inform us if you know or have reason to know whether any of the foregoing representations or warranties is no longer correct or becomes incorrect.
+</div>
+</div>
 
 You acknowledge that Jovay Labs relies upon these representations and warranties as a condition to providing the Services and that, without them, Jovay Labs would not make the Services available to you.
 
 ## 5	User Conduct
 You agree that you are solely responsible for your conduct in connection with the Services.  You agree that you will abide by this Agreement and will not (and will not attempt to):
 
-<div style="margin-left: 2em;">(a)	provide false or misleading information to Jovay, Jovay Bridge or Jovay Labs;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">
+(a)&nbsp;&nbsp;provide false or misleading information to Jovay, Jovay Bridge or Jovay Labs;
+</div><br>
 
-<div style="margin-left: 2em;">(b)	use or attempt to use another user’s Wallet;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(b)&nbsp;&nbsp;use or attempt to use another user’s Wallet;
+</div><br>
 
-<div style="margin-left: 2em;">(c)	impersonate another person;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(c)&nbsp;&nbsp;impersonate another person;
+</div><br>
 
-<div style="margin-left: 2em;">(d)	use the Services in any manner that could interfere with, disrupt, negatively affect, or inhibit other users from fully enjoying the Services, or that could damage, disable, overburden, or impair the functioning of the Services in any manner;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(d)&nbsp;&nbsp;use the Services in any manner that could interfere with, disrupt, negatively affect, or inhibit other users from fully enjoying the Services, or that could damage, disable, overburden, or impair the functioning of the Services in any manner;
+</div><br>
 
-<div style="margin-left: 2em;">(e)	develop, use, or disseminate any software, or interact with any API in any manner, that could damage, harm, or impair the Services;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(e)&nbsp;&nbsp;develop, use, or disseminate any software, or interact with any API in any manner, that could damage, harm, or impair the Services;
+</div><br>
 
-<div style="margin-left: 2em;">(f)	bypass or circumvent measures employed to prevent or limit access to any feature, function, area, or code of the Services;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(f)	bypass or circumvent measures employed to prevent or limit access to any feature, function, area, or code of the Services;
+</div><br>
 
-<div style="margin-left: 2em;">(g)	bypass or ignore instructions that control all access to the Services;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(g)&nbsp;&nbsp;bypass or ignore instructions that control all access to the Services;
+</div><br>
 
-<div style="margin-left: 2em;">(h)	use the Services for any illegal or unauthorized purpose, or engage in, encourage, or promote any activity that violates any applicable law or this Agreement;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(h)&nbsp;&nbsp;use the Services for any illegal or unauthorized purpose, or engage in, encourage, or promote any activity that violates any applicable law or this Agreement;
+</div><br>
 
-<div style="margin-left: 2em;">(i)	carry out any illegal activities in connection with or in any way related to your access to and use of the Services, including money laundering, terrorist financing, or deliberately engaging in activities designed to adversely affect the performance of the Services;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(i)&nbsp;&nbsp;carry out any illegal activities in connection with or in any way related to your access to and use of the Services, including money laundering, terrorist financing, or deliberately engaging in activities designed to adversely affect the performance of the Services;
+</div><br>
 
-<div style="margin-left: 2em;">(j)	engage in or knowingly facilitate any “front-running,” “wash trading,” “pump and dump trading,” “ramping,” “cornering,” fraudulent, deceptive, or manipulative trading activities;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(j)&nbsp;&nbsp;engage in or knowingly facilitate any “front-running,” “wash trading,” “pump and dump trading,” “ramping,” “cornering,” fraudulent, deceptive, or manipulative trading activities;
+</div><br>
 
-<div style="margin-left: 2em;">(k)	use the Services to carry out any financial activities subject to registration or licensing, including using the Services to issue or transact in securities, Digital Assets, debt financings, equity financings, or other similar transactions except in strict compliance with all applicable laws; or</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(k)&nbsp;&nbsp;use the Services to carry out any financial activities subject to registration or licensing, including using the Services to issue or transact in securities, Digital Assets, debt financings, equity financings, or other similar transactions except in strict compliance with all applicable laws; or
+</div><br>
 
-<div style="margin-left: 2em;">(l)	attempt to access any Wallet that you do not have the legal authority to access.</div>
+<div style="margin-left: 2em; text-indent: -2em;">
+(l)&nbsp;&nbsp;attempt to access any Wallet that you do not have the legal authority to access.
+</div>
+</div>
 
 ## 6	Disclaimers and Risks
 ### 6.1	Disclaimers
@@ -187,17 +291,19 @@ THE SERVICES RELY ON EMERGING TECHNOLOGIES, INCLUDING BLOCKCHAIN AND DISTRIBUTED
 
 IN PARTICULAR, YOU UNDERSTAND AND ACCEPT THAT:
 
-<div style="margin-left: 2em;">(a)	WE DO NOT CONTROL THE ETHEREUM BLOCKCHAIN OR ANY OTHER UNDERLYING NETWORKS THAT THE PROTOCOL INTERACTS WITH, NOR DO WE CONTROL SMART CONTRACTS OR APPLICATIONS DEPLOYED BY THIRD PARTIES ON THE JOVAY NETWORK.</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">(a)&nbsp;&nbsp;WE DO NOT CONTROL THE ETHEREUM BLOCKCHAIN OR ANY OTHER UNDERLYING NETWORKS THAT THE PROTOCOL INTERACTS WITH, NOR DO WE CONTROL SMART CONTRACTS OR APPLICATIONS DEPLOYED BY THIRD PARTIES ON THE JOVAY NETWORK.</div><br>
 
-<div style="margin-left: 2em;">(b)	BLOCKCHAIN PROTOCOLS PRESENT THEIR OWN RISKS, INCLUDING THE POSSIBILITY OF LOSSES RESULTING FROM PROTOCOL BUGS, SECURITY VULNERABILITIES, MISCONFIGURED SMART CONTRACTS, OR VIOLATION OF PROTOCOL RULES.</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(b)&nbsp;&nbsp;BLOCKCHAIN PROTOCOLS PRESENT THEIR OWN RISKS, INCLUDING THE POSSIBILITY OF LOSSES RESULTING FROM PROTOCOL BUGS, SECURITY VULNERABILITIES, MISCONFIGURED SMART CONTRACTS, OR VIOLATION OF PROTOCOL RULES.</div><br>
 
-<div style="margin-left: 2em;">(c)	TRANSACTIONS ON BLOCKCHAINS ARE IRREVERSIBLE, AND ERRORS (INCLUDING SENDING ASSETS TO INCORRECT ADDRESSES OR INTERACTING WITH MALICIOUS CONTRACTS) MAY RESULT IN PERMANENT LOSS.</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(c)&nbsp;&nbsp;TRANSACTIONS ON BLOCKCHAINS ARE IRREVERSIBLE, AND ERRORS (INCLUDING SENDING ASSETS TO INCORRECT ADDRESSES OR INTERACTING WITH MALICIOUS CONTRACTS) MAY RESULT IN PERMANENT LOSS.</div><br>
 
-<div style="margin-left: 2em;">(d)	THE COST AND SPEED OF TRANSACTIONS ON BLOCKCHAIN-BASED SYSTEMS CAN VARY AND MAY INCREASE DRAMATICALLY AT ANY TIME, AND SUCH FACTORS ARE OUTSIDE OUR CONTROL.</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(d)&nbsp;&nbsp;THE COST AND SPEED OF TRANSACTIONS ON BLOCKCHAIN-BASED SYSTEMS CAN VARY AND MAY INCREASE DRAMATICALLY AT ANY TIME, AND SUCH FACTORS ARE OUTSIDE OUR CONTROL.</div><br>
 
-<div style="margin-left: 2em;">(e)	PROTOCOL UPGRADES (INCLUDING CHANGES IN PROOF SYSTEMS OR CONSENSUS MECHANISMS) MAY INTRODUCE BUGS OR SECURITY VULNERABILITIES THAT CAN AFFECT FUNCTIONALITY OR LEAD TO LOSS OF FUNDS OR DATA.</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(e)&nbsp;&nbsp;PROTOCOL UPGRADES (INCLUDING CHANGES IN PROOF SYSTEMS OR CONSENSUS MECHANISMS) MAY INTRODUCE BUGS OR SECURITY VULNERABILITIES THAT CAN AFFECT FUNCTIONALITY OR LEAD TO LOSS OF FUNDS OR DATA.</div><br>
 
-<div style="margin-left: 2em;">(f)	USE OF BRIDGING SERVICES AND RWA TOKENIZATION FEATURES INVOLVES ADDITIONAL RISKS, INCLUDING CROSS-CHAIN ATTACKS, BRIDGE CONTRACT EXPLOITS, AND CHANGES IN LEGAL OR REGULATORY TREATMENT OF TOKENIZATION AND DIGITAL ASSETS.</div>
+<div style="margin-left: 2em; text-indent: -2em;">(f)&nbsp;&nbsp;USE OF BRIDGING SERVICES AND RWA TOKENIZATION FEATURES INVOLVES ADDITIONAL RISKS, INCLUDING CROSS-CHAIN ATTACKS, BRIDGE CONTRACT EXPLOITS, AND CHANGES IN LEGAL OR REGULATORY TREATMENT OF TOKENIZATION AND DIGITAL ASSETS.</div>
+</div>
 
 WE MAY PROVIDE ACCESS TO FEATURES OR SERVICES IN “BETA” OR PRE-RELEASE FORM, WHICH MAY HAVE BUGS OR ERRORS, MAY BE INCOMPLETE, MAY CHANGE PRIOR TO FULL RELEASE, OR MAY NEVER BE RELEASED COMMERCIALLY.
 
@@ -206,15 +312,17 @@ WE MAY PROVIDE ACCESS TO FEATURES OR SERVICES IN “BETA” OR PRE-RELEASE FORM,
 ### 6.3	Bridging and Cross-Chain Risks
 When you use Jovay Bridge to transfer Digital Assets between Ethereum, Jovay, and/or other supported networks, you acknowledge and agree that:
 
-<div style="margin-left: 2em;">(a)	cross-chain transactions rely on multiple independent networks, any of which may fail, be congested, be attacked, or otherwise malfunction;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">(a)&nbsp;&nbsp;cross-chain transactions rely on multiple independent networks, any of which may fail, be congested, be attacked, or otherwise malfunction;</div><br>
 
-<div style="margin-left: 2em;">(b)	bridge smart contracts and associated infrastructure may be exploited by malicious actors, resulting in loss of assets;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(b)&nbsp;&nbsp;bridge smart contracts and associated infrastructure may be exploited by malicious actors, resulting in loss of assets;</div><br>
 
-<div style="margin-left: 2em;">(c)	differences in protocol rules, consensus mechanisms, or transaction finality between chains may cause delays, reversions, or incompatibility;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(c)&nbsp;&nbsp;differences in protocol rules, consensus mechanisms, or transaction finality between chains may cause delays, reversions, or incompatibility;</div><br>
 
-<div style="margin-left: 2em;">(d)	bridged assets may not have the same legal, economic, or technical characteristics as their original form, and may be subject to additional regulatory or compliance obligations in one or more jurisdictions; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(d)&nbsp;&nbsp;bridged assets may not have the same legal, economic, or technical characteristics as their original form, and may be subject to additional regulatory or compliance obligations in one or more jurisdictions; and</div><br>
 
-<div style="margin-left: 2em;">(e)	we do not custody, control, or guarantee the redemption or availability of bridged assets, and are not responsible for any Loss, delay, or failure in cross-chain transfers, regardless of cause.</div>
+<div style="margin-left: 2em; text-indent: -2em;">(e)&nbsp;&nbsp;we do not custody, control, or guarantee the redemption or availability of bridged assets, and are not responsible for any Loss, delay, or failure in cross-chain transfers, regardless of cause.</div>
+</div>
 
 ### 6.4	Third Party Services and Content
 The Services may provide access to services, sites, technology, applications, informational content, products and resources that are provided or otherwise made available by third parties (“**Third Party Content**” and “**Third Party Services**”). Your access and use of Third Party Content and Third Party Services may also be subject to additional terms and conditions, privacy policies, or other agreements with such third parties. Those terms and conditions may involve separate fees and charges, or may include disclaimers or risk warnings about reliance on or the accuracy of any information. Such terms may also apply a privacy policy different from ours, and it is your responsibility to understand how those service providers use any of your information under their policies.
@@ -265,20 +373,29 @@ Each party will be responsible, as required under applicable law, for identifyin
 ### 10.1	Generally
 We may, in our sole and absolute discretion, suspend your ability to access or use any portion or all of the Services immediately if we determine:
 
-<div style="margin-left: 2em;">(a)	your use of the Services (i) poses a security risk to the Services or any third party, (ii) could adversely impact our systems, the Services, or the systems of any other user, (iii) could subject us, our Affiliates, or any third party to any liability, or (iv) could breach any law, regulation or ethical standards;</div><br>
-
-<div style="margin-left: 2em;">(b)	you are, or any End User is, in breach of this Agreement;</div><br>
-
-<div style="margin-left: 2em;">(c)	you are in breach of your payment obligations under this Agreement for 30 days or longer; or</div><br>
-
-<div style="margin-left: 2em;">(d)	you have ceased to operate in the ordinary course or have become subject to a User Insolvency Event.</div>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">
+(a)&nbsp;&nbsp;your use of the Services (i) poses a security risk to the Services or any third party, (ii) could adversely impact our systems, the Services, or the systems of any other user, (iii) could subject us, our Affiliates, or any third party to any liability, or (iv) could breach any law, regulation or ethical standards;
+</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(b)&nbsp;&nbsp;you are, or any End User is, in breach of this Agreement;
+</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(c)&nbsp;&nbsp;you are in breach of your payment obligations under this Agreement for 30 days or longer; or
+</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">
+(d)&nbsp;&nbsp;you have ceased to operate in the ordinary course or have become subject to a User Insolvency Event.
+</div>
+</div>
 
 ### 10.2	Effect of Suspension
 If we suspend your access to or use of any portion or all of the Services:
 
-<div style="margin-left: 2em;">(a)	you remain responsible for all fees and charges you incur during the period of suspension; and</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">(a)&nbsp;&nbsp;you remain responsible for all fees and charges you incur during the period of suspension; and</div><br>
 
-<div style="margin-left: 2em;">(b)	you will not be entitled to any fee credits for any period of suspension.</div>
+<div style="margin-left: 2em; text-indent: -2em;">(b)&nbsp;&nbsp;you will not be entitled to any fee credits for any period of suspension.</div>
+</div>
 
 ### 10.3	Limiting API Requests
 We retain sole and absolute discretion to limit your API requests (“**API Requests**”) submitted in conjunction with your use of the Services at any time if your usage of the Services exceeds the usage threshold specified on the Site or the Interface. Further, excessive API Requests, as determined by us in our sole and absolute discretion, may result in the temporary or permanent suspension of your use of the applicable Service. We are not required but will endeavor, when reasonable, to warn a user prior to suspension.
@@ -294,22 +411,24 @@ You may terminate this Agreement for any reason by ceasing use of the Services.
 
 **(b) Termination for Cause**
 
-<div style="margin-left: 2em;"><strong>(i) By either Party</strong></div><br>
+<div style="margin-left: 2em;"><strong>(i)&nbsp;&nbsp;By either Party</strong></div><br>
 
-<div style="margin-left: 2em;">Either party may terminate this Agreement for cause if the other party is in material breach of this Agreement and the material breach remains uncured for a period of 30 days from receipt of the other party’s notice of breach.</div><br>
+<div style="margin-left: 4em;">Either party may terminate this Agreement for cause if the other party is in material breach of this Agreement and the material breach remains uncured for a period of 30 days from receipt of the other party’s notice of breach.</div><br>
 
-<div style="margin-left: 2em;"><strong>(ii) By Us</strong></div><br>
+<div style="margin-left: 2em;"><strong>(ii)&nbsp;&nbsp;By Us</strong></div><br>
 
-<div style="margin-left: 2em;">We may also terminate this Agreement for cause immediately (a) if we have the right to suspend under section 10, (b) if our relationship with a third-party partner who provides software or other technology we use to provide the Services expires, terminates, or requires us to change the way we provide the software or other technology as part of the Services, or (c) in order to avoid any risk of violating any law or regulation.</div>
+<div style="margin-left: 4em;">We may also terminate this Agreement for cause immediately (a) if we have the right to suspend under section 10, (b) if our relationship with a third-party partner who provides software or other technology we use to provide the Services expires, terminates, or requires us to change the way we provide the software or other technology as part of the Services, or (c) in order to avoid any risk of violating any law or regulation.</div>
 
 ### 11.3	Effect of Termination
 Upon the Termination Date:
 
-<div style="margin-left: 2em;">(a)	all your rights under this Agreement immediately terminate;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">(a)&nbsp;&nbsp;all your rights under this Agreement immediately terminate;</div><br>
 
-<div style="margin-left: 2em;">(b)	you remain responsible for all fees and charges you have incurred through the Termination Date and are responsible for any fees and charges you incur during the post-termination period; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(b)&nbsp;&nbsp;you remain responsible for all fees and charges you have incurred through the Termination Date and are responsible for any fees and charges you incur during the post-termination period; and</div><br>
 
-<div style="margin-left: 2em;">(c)	the terms and conditions of this Agreement shall survive the expiration or termination of this Agreement to the full extent necessary for their enforcement and for the protection of the party in whose favor they operate. For instance, should this Agreement between you and us terminate, any dispute raised after you stop accessing or using the Services will be subject to the applicable provisions of this Agreement if that dispute relates to your prior access or use.</div>
+<div style="margin-left: 2em; text-indent: -2em;">(c)&nbsp;&nbsp;the terms and conditions of this Agreement shall survive the expiration or termination of this Agreement to the full extent necessary for their enforcement and for the protection of the party in whose favor they operate. For instance, should this Agreement between you and us terminate, any dispute raised after you stop accessing or using the Services will be subject to the applicable provisions of this Agreement if that dispute relates to your prior access or use.</div>
+</div>
 
 For any use of the Services after the Termination Date, the terms of this Agreement will again apply.
 
@@ -322,11 +441,13 @@ This Agreement shall be governed by, and construed in accordance with, the laws 
 ### 12.2	Agreement to Submit to Arbitration
 To the extent permitted by law, you agree to waive your rights to any jury trial and to have any dispute arising out of or related to this Agreement resolved in court. Instead, for any dispute or claim that you have against us or relating in any way to this Agreement, you agree to first contact us and attempt to resolve the claim informally by sending a written notice of your claim (“**Notice**”) to us by email at info@jovay.io. The Notice must:
 
-<div style="margin-left: 2em;">(a)	include your name, residence address, email address, and telephone number;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">(a)&nbsp;&nbsp;include your name, residence address, email address, and telephone number;</div><br>
 
-<div style="margin-left: 2em;">(b)	describe the nature and basis of the claim; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(b)&nbsp;&nbsp;describe the nature and basis of the claim; and</div><br>
 
-<div style="margin-left: 2em;">(c)	state the specific relief sought.</div>
+<div style="margin-left: 2em; text-indent: -2em;">(c)&nbsp;&nbsp;state the specific relief sought.</div>
+</div>
 
 Our notice to you will be similar in form to that described above. If you and us cannot reach an agreement to resolve the claim within 30 days after such Notice is received, then either party may then submit the dispute to binding arbitration as prescribed below.
 
@@ -334,17 +455,19 @@ Any dispute, controversy, difference or claim arising out of or relating to this
 
 You and we agree that:
 
-<div style="margin-left: 2em;">(a)	this section is governed by Hong Kong law;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">(a)&nbsp;&nbsp;this section is governed by Hong Kong law;</div><br>
 
-<div style="margin-left: 2em;">(b)	the seat of arbitration will be Hong Kong;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(b)&nbsp;&nbsp;the seat of arbitration will be Hong Kong;</div><br>
 
-<div style="margin-left: 2em;">(c)	unless you and we agree otherwise, the number of arbitrators will be one (1) and that arbitrator must have relevant legal and technological expertise;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(c)&nbsp;&nbsp;unless you and we agree otherwise, the number of arbitrators will be one (1) and that arbitrator must have relevant legal and technological expertise;</div><br>
 
-<div style="margin-left: 2em;">(d)	if you and we do not agree on the arbitrator to be appointed within 15 working days of the dispute proceeding to arbitration, the arbitrator shall be appointed by HKIAC;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(d)&nbsp;&nbsp;if you and we do not agree on the arbitrator to be appointed within 15 working days of the dispute proceeding to arbitration, the arbitrator shall be appointed by HKIAC;</div><br>
 
-<div style="margin-left: 2em;">(e)	the arbitrator may conduct only an individual arbitration and may not: (i) consolidate more than one individual’s claims; (ii) preside over any type of class or representative proceeding; or (iii) preside over any proceeding involving more than one individual; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(e)&nbsp;&nbsp;the arbitrator may conduct only an individual arbitration and may not: (i) consolidate more than one individual’s claims; (ii) preside over any type of class or representative proceeding; or (iii) preside over any proceeding involving more than one individual; and</div><br>
 
-<div style="margin-left: 2em;">(f)	the arbitration proceedings will be conducted in English.</div>
+<div style="margin-left: 2em; text-indent: -2em;">(f)&nbsp;&nbsp;the arbitration proceedings will be conducted in English.</div>
+</div>
 
 Any claim to be brought by you arising out of or related to this Agreement must commence arbitration proceedings strictly within one (1) year after such claim arises, failing which it shall be irrevocably time barred. Time-barred claims means that there is no longer any lawful right to assert such claims nor to commence any formal legal action.
 
@@ -354,17 +477,21 @@ Notwithstanding any other provision of this Agreement, you agree that we have th
 
 You agree that any dispute arising out of or related to this Agreement:
 
-<div style="margin-left: 2em;">(a)	is personal to you and us; and</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">(a)&nbsp;&nbsp;is personal to you and us; and</div><br>
 
-<div style="margin-left: 2em;">(b)	will be resolved solely through individual action, and will not be brought as a class arbitration, class action or any other type of representative proceeding.</div>
+<div style="margin-left: 2em; text-indent: -2em;">(b)&nbsp;&nbsp;will be resolved solely through individual action, and will not be brought as a class arbitration, class action or any other type of representative proceeding.</div>
+</div>
 
 If any portion of this section is found to be unenforceable or unlawful for any reason:
 
-<div style="margin-left: 2em;">(a)	only the unenforceable or unlawful provision shall be severed/deleted;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">(a)&nbsp;&nbsp;only the unenforceable or unlawful provision shall be severed/deleted;</div><br>
 
-<div style="margin-left: 2em;">(b)	severance of the unenforceable or unlawful provision should have no impact whatsoever on the remainder of this section or the parties’ ability to compel arbitration of any remaining claims on an individual basis pursuant to this section; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(b)&nbsp;&nbsp;severance of the unenforceable or unlawful provision should have no impact whatsoever on the remainder of this section or the parties’ ability to compel arbitration of any remaining claims on an individual basis pursuant to this section; and</div><br>
 
-<div style="margin-left: 2em;">(c)	to the extent that any claims must therefore proceed on a class, collective, consolidated, or representative basis, such claims must be litigated in a civil court of competent jurisdiction and not in arbitration, and the parties agree that litigation of those claims should be stayed pending the outcome of any individual claims in arbitration.</div>
+<div style="margin-left: 2em; text-indent: -2em;">(c)&nbsp;&nbsp;to the extent that any claims must therefore proceed on a class, collective, consolidated, or representative basis, such claims must be litigated in a civil court of competent jurisdiction and not in arbitration, and the parties agree that litigation of those claims should be stayed pending the outcome of any individual claims in arbitration.</div>
+</div>
 
 ## 13	Miscellaneous
 ### 13.1	Assignment 
@@ -397,11 +524,11 @@ All communications and notices made or given pursuant to this Agreement must be 
 <br>
 <div style="margin-left: 2em;"><b>(a)	To You</b></div><br>
 
-<div style="margin-left: 2em;">We may provide any notice to you under this Agreement using commercially reasonable means, including: (i) posting a notice on the Site; (ii) posting the notice in the Interface; or (iii) using public communication channels. Notices we provide by posting on the Site or using public communication channels will be effective upon posting.</div><br>
+<div style="margin-left: 4em;">We may provide any notice to you under this Agreement using commercially reasonable means, including: (i) posting a notice on the Site; (ii) posting the notice in the Interface; or (iii) using public communication channels. Notices we provide by posting on the Site or using public communication channels will be effective upon posting.</div><br>
 
 <div style="margin-left: 2em;"><b>(b)	To Us</b></div><br>
 
-<div style="margin-left: 2em;">To give us notice under this Agreement, you must contact us by email at info@jovay.io.</div>
+<div style="margin-left: 4em;">To give us notice under this Agreement, you must contact us by email at info@jovay.io.</div>
 
 ### 13.10	No Third Party Beneficiaries
 Except as otherwise set forth herein, this Agreement does not create any third party beneficiary rights in any person that is not a party to this Agreement.  Without limiting the generality of the foregoing, a person who is not a party to this Agreement will have no rights under the Contracts (Rights of Third Parties) Ordinance (Cap. 623 of the laws of Hong Kong) to enforce any of its Agreement.
@@ -417,25 +544,27 @@ Any present or future legislation which operates to vary the obligations of a pa
 ### 13.13	Notice and Procedure for Making Claims of Copyright Infringement
 If you are a copyright owner or agent of the owner, and you believe that your copyright or the copyright of a person on whose behalf you are authorized to act has been infringed, please provide us a written notice at the address below with the following information:
 
-<div style="margin-left: 2em;">(a)	an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright or other intellectual property interest;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">(a)&nbsp;&nbsp;an electronic or physical signature of the person authorized to act on behalf of the owner of the copyright or other intellectual property interest;</div><br>
 
-<div style="margin-left: 2em;">(b)	a description of the copyrighted work or other intellectual property that you claim has been infringed;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(b)&nbsp;&nbsp;a description of the copyrighted work or other intellectual property that you claim has been infringed;</div><br>
 
-<div style="margin-left: 2em;">(c)	a description of where the material that you claim is infringing is located with respect to the Services;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(c)&nbsp;&nbsp;a description of where the material that you claim is infringing is located with respect to the Services;</div><br>
 
-<div style="margin-left: 2em;">(d)	your address, telephone number, and email address;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(d)&nbsp;&nbsp;your address, telephone number, and email address;</div><br>
 
-<div style="margin-left: 2em;">(e)	a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(e)&nbsp;&nbsp;a statement by you that you have a good faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law; and</div><br>
 
-<div style="margin-left: 2em;">(f)	a statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright or intellectual property owner or authorized to act on the copyright or intellectual property owner’s behalf.</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(f)&nbsp;&nbsp;a statement by you, made under penalty of perjury, that the above information in your notice is accurate and that you are the copyright or intellectual property owner or authorized to act on the copyright or intellectual property owner’s behalf.</div>
 
-<div style="margin-left: 2em;">You can reach us at:</div><br>
+You can reach us at:<br>
 
-<div style="margin-left: 2em;"><b>Email:</b> info@jovay.io</div><br>
+<b>Email:</b> info@jovay.io<br>
 
-<div style="margin-left: 2em;"><b>Subject Line:</b> Copyright Notification</div><br>
+<b>Subject Line:</b> Copyright Notification<br>
 
-<div style="margin-left: 2em;"><b>Attention:</b> Copyright - Jovay</div>
+<b>Attention:</b> Copyright - Jovay
+</div>
 
 ### 13.14	No Liability for Losses
 A party is not liable for Losses caused by the exercise or attempted exercise of, failure to exercise, or delay in exercising a right or remedy under this Agreement.
@@ -458,13 +587,15 @@ A party may exercise a right or remedy or give or refuse its consent in any way 
 
 “**Digital Assets**” means any:
 
-<div style="margin-left: 2em;">(a)	digital representation of value which can be used for payment or investment purposes or to access a good or service;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">(a)&nbsp;&nbsp;digital representation of value which can be used for payment or investment purposes or to access a good or service;</div><br>
 
-<div style="margin-left: 2em;">(b)	asset (including a token) in digital or electronic form that uses cryptography and/or distributed ledger technology or similar technologies;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(b)&nbsp;&nbsp;asset (including a token) in digital or electronic form that uses cryptography and/or distributed ledger technology or similar technologies;</div><br>
 
-<div style="margin-left: 2em;">(c)	unit of account, a store of economic value or medium of exchange that is in digital or electronic form; or</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(c)&nbsp;&nbsp;unit of account, a store of economic value or medium of exchange that is in digital or electronic form; or</div><br>
 
-<div style="margin-left: 2em;">(d)	asset or thing that is, or in the future becomes, known as, referred to as, or classified for any legal or regulatory purposes in any jurisdiction as, a “digital asset”, “virtual asset”, “virtual currency”, “cryptoasset”, “cryptocurrency”, “stablecoin”, “token”, “tokenized asset”, “memecoin”, “non-fungible token” (or any similar or analogous concept or thing, in each case however named or described).</div>
+<div style="margin-left: 2em; text-indent: -2em;">(d)&nbsp;&nbsp;asset or thing that is, or in the future becomes, known as, referred to as, or classified for any legal or regulatory purposes in any jurisdiction as, a “digital asset”, “virtual asset”, “virtual currency”, “cryptoasset”, “cryptocurrency”, “stablecoin”, “token”, “tokenized asset”, “memecoin”, “non-fungible token” (or any similar or analogous concept or thing, in each case however named or described).</div>
+</div>
 
 “**End User**” means any person that directly or indirectly through another user: (a) accesses or uses Your Content; or (b) otherwise accesses or uses the Services through your Wallet.
 
@@ -491,26 +622,28 @@ A party may exercise a right or remedy or give or refuse its consent in any way 
 ## 15	Interpretation
 In this Agreement, unless a contrary intention is expressed:
 
-<div style="margin-left: 2em;">(a)	headings are for reference only and do not affect the interpretation of the document;</div><br>
+<div style="margin-left: 2em;">
+<div style="margin-left: 2em; text-indent: -2em;">(a)&nbsp;&nbsp;headings are for reference only and do not affect the interpretation of the document;</div><br>
 
-<div style="margin-left: 2em;">(b)	the singular includes the plural and the plural includes the singular;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(b)&nbsp;&nbsp;the singular includes the plural and the plural includes the singular;</div><br>
 
-<div style="margin-left: 2em;">(c)	a reference to a document (including this Agreement) or legislation includes all amendments or supplements to, or replacements or novation of, that document or legislation, and in the case of legislation, all delegated legislation made under it;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(c)&nbsp;&nbsp;a reference to a document (including this Agreement) or legislation includes all amendments or supplements to, or replacements or novation of, that document or legislation, and in the case of legislation, all delegated legislation made under it;</div><br>
 
-<div style="margin-left: 2em;">(d)	any reference to this Agreement shall include this Agreement and its schedules and appendices attached hereto; a reference to a party to any document includes that party’s successors and permitted assigns;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(d)&nbsp;&nbsp;any reference to this Agreement shall include this Agreement and its schedules and appendices attached hereto; a reference to a party to any document includes that party’s successors and permitted assigns;</div><br>
 
-<div style="margin-left: 2em;">(e)	a reference to a particular person includes the person’s executors, administrators, successors, substitutes (including persons taking by novation) and assigns;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(e)&nbsp;&nbsp;a reference to a particular person includes the person’s executors, administrators, successors, substitutes (including persons taking by novation) and assigns;</div><br>
 
-<div style="margin-left: 2em;">(f)	an agreement, representation or warranty by two or more persons binds them jointly and each of them individually;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(f)&nbsp;&nbsp;an agreement, representation or warranty by two or more persons binds them jointly and each of them individually;</div><br>
 
-<div style="margin-left: 2em;">(g)	where a word or phrase is defined, its other grammatical terms have corresponding meanings;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(g)&nbsp;&nbsp;where a word or phrase is defined, its other grammatical terms have corresponding meanings;</div><br>
 
-<div style="margin-left: 2em;">(h)	a reference to conduct includes a reference to any omission, statement or undertaking, whether or not in writing;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(h)&nbsp;&nbsp;a reference to conduct includes a reference to any omission, statement or undertaking, whether or not in writing;</div><br>
 
-<div style="margin-left: 2em;">(i)	a provision of this Agreement may not be construed adversely to us solely on the ground that we were responsible for the preparation of this Agreement or the preparation or proposal of that provision;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(i)&nbsp;&nbsp;a provision of this Agreement may not be construed adversely to us solely on the ground that we were responsible for the preparation of this Agreement or the preparation or proposal of that provision;</div><br>
 
-<div style="margin-left: 2em;">(j)	references to any Hong Kong legal term or legal or regulatory concept shall, in respect of any jurisdiction other than Hong Kong, be deemed to include that which most approximates in that jurisdiction to such Hong Kong legal term or legal or regulatory concept;</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(j)&nbsp;&nbsp;references to any Hong Kong legal term or legal or regulatory concept shall, in respect of any jurisdiction other than Hong Kong, be deemed to include that which most approximates in that jurisdiction to such Hong Kong legal term or legal or regulatory concept;</div><br>
 
-<div style="margin-left: 2em;">(k)	the words “include”, “including”, “for example”, “such as” or any form of those words or similar expressions do not limit what else is included and must be construed as if they are followed by the words “without limitation” or “but not limited to”; and</div><br>
+<div style="margin-left: 2em; text-indent: -2em;">(k)&nbsp;&nbsp;the words “include”, “including”, “for example”, “such as” or any form of those words or similar expressions do not limit what else is included and must be construed as if they are followed by the words “without limitation” or “but not limited to”; and</div><br>
 
-<div style="margin-left: 2em;">(l)	a reference to “USD”, “$” or “dollars” is a reference to the lawful currency of the United States.</div>
+<div style="margin-left: 2em; text-indent: -2em;">(l)&nbsp;&nbsp;a reference to “USD”, “$” or “dollars” is a reference to the lawful currency of the United States.</div>
+</div>
