@@ -55,6 +55,17 @@ export default defineConfig({
         ],
       },
       {
+        text: "Guides",
+        collapsed: false,
+        items: [
+          { text: "User Guide", link: "/guide/user-guide" },
+          { text: "Developer Guide", link: "/guide/developer-guide" },
+          { text: "Developer Quickstart", link: "/guide/developer-quickstart" },
+          { text: "Jovay Bridge DApp Tutorial", link: "/guide/jovay-bridge-dapp-tutorial" },
+          { text: "Jovay Explorer", link: "/guide/jovay-explorer" },
+        ],
+      },
+      {
         text: "Developers",
         collapsed: false,
         items: [
@@ -102,17 +113,6 @@ export default defineConfig({
           },
           { text: "Jovay Bridge Developer Reference", link: "/developer/jovay-bridge-developer-reference" },
           { text: "Network Information", link: "/developer/network-information" },
-        ],
-      },
-      {
-        text: "Guides",
-        collapsed: false,
-        items: [
-          { text: "User Guide", link: "/guide/user-guide" },
-          { text: "Developer Guide", link: "/guide/developer-guide" },
-          { text: "Developer Quickstart", link: "/guide/developer-quickstart" },
-          { text: "Jovay Bridge DApp Tutorial", link: "/guide/jovay-bridge-dapp-tutorial" },
-          { text: "Jovay Explorer", link: "/guide/jovay-explorer" },
         ],
       },
       {
