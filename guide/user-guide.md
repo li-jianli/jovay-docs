@@ -32,6 +32,11 @@ Use the information from the table below:
 
 After saving, you can easily switch to the Jovay network from your wallet's network list.
 
+
+<div align="center"><img src="/public/Images/user-guide/metamask-add-network.png"></div><br>
+
+<div align="center"><i>Figure 1: the Config of Jovay Mainnet</i></div>
+
 ## Bridging Assets with the Jovay Bridge
 To use DApps on Jovay, you'll need to move assets like ETH from the Ethereum mainnet to Jovay. This is done using a "bridge."
 
@@ -50,7 +55,7 @@ Once you have funds on Jovay, you can explore the ecosystem. Here are some essen
 
 + [Jovay Explorer](https://explorer.jovay.io)  
 The official block explorer. Use it to view your transaction history, check contract details, and see what's happening on the network in real-time.
-+ [Jovay Ecosystem](https://ecosystem.jovay.io/)  
++ [Jovay Ecosystem](https://jovay.io/ecosystem)  
 Discover the growing list of DApps, tools, and projects that are building on and supporting the Jovay network.
 
 ## For Developers

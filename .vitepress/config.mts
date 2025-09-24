@@ -101,6 +101,7 @@ export default defineConfig({
             ],
           },
           { text: "Jovay Bridge Developer Reference", link: "/developer/jovay-bridge-developer-reference" },
+          { text: "Network Information", link: "/developer/network-information" },
         ],
       },
       {

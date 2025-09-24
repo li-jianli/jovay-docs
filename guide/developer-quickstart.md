@@ -33,7 +33,11 @@ Refer to the [MetaMask help document](https://support.metamask.io/configure/netw
 | **Symbol** | ETH | ETH |
 | **Block Explorer URL** | `https://sepolia-explorer.jovay.io/l2` | `https://explorer.jovay.io` |
 
+For more detailed network information, please see the [Network Information](../developer/network-information.md) page.
+
 > 💡**Tips:** We recommend adding the "Block explorer URL" part when you add network to metamask, but this is optional.
+
+During the development phase, we recommend using the testnet. After completing development, testing, and a security audit, you can deploy to the Jovay Mainnet. Here’s how to configure the Jovay Testnet in MetaMask.
 
 <div align="center"><img src="/public/Images/developer-quickstart/the-config-of-Jovay.png"></div><br>
 
