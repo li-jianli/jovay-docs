@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import markdownItMathjax3 from 'markdown-it-mathjax3'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,6 +9,7 @@ export default defineConfig({
 
   markdown: {
     config: (md) => {
+      md.use(markdownItMathjax3)
       md.renderer.rules.image = (tokens, idx, options, env, self) => {
         const token = tokens[idx];
         const src = token.attrGet("src");
