@@ -130,7 +130,7 @@ export default defineConfig({
           { text: "Terms of Service", link: "/legal/terms-of-service" },
           { text: "Privacy Policy", link: "/legal/privacy-policy" },
           { text: "Brand Usage Policy", link: "/legal/brand-usage-policy" },
-          { text: "Disclaimers", link: "/legal/disclaimer" },
+          // { text: "Disclaimers", link: "/legal/disclaimer" },
        ],
      },
     ],
