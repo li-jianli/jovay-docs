@@ -16,3 +16,5 @@ public/Images/jovay-white-paper/fine-grained-batch-proofs.png filter=lfs diff=lf
 public/Images/jovay-white-paper/rwa-standardized-phases.png filter=lfs diff=lfs merge=lfs -text
 public/Images/jovay-white-paper/scalable-parallel-mechanism.png filter=lfs diff=lfs merge=lfs -text
 public/Images/jovay-white-paper/trust-chain-of-proving-system.png filter=lfs diff=lfs merge=lfs -text
+security-reports/202509/Jovay-Network-SlowMist-Audit-Report-Contracts-20250924.pdf filter=lfs diff=lfs merge=lfs -text
+security-reports/202509/Jovay-Network-SlowMist-Audit-Report-Chain-20250924.pdf filter=lfs diff=lfs merge=lfs -text
