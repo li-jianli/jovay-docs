@@ -42,4 +42,6 @@ Faucets provide free testnet tokens for development purposes.
 *   **Jovay Testnet Faucet**: [https://zan.top/faucet/jovay](https://zan.top/faucet/jovay)
 
 ### RPC Providers
-[ZAN](https://zan.top/) provides reliable RPC services for Jovay. For higher rate limits and enhanced services, you can get a dedicated RPC endpoint at [ZAN Node Service](https://zan.top/home/node-service).
+Jovay is working to support a variety of RPC providers. Currently, the following providers are supported:
+
+*   **ZAN**: [ZAN](https://zan.top/) provides reliable RPC services for Jovay. For higher rate limits and enhanced services, you can view their API plans at [https://zan.top/blockchain/jovay](https://zan.top/blockchain/jovay).
