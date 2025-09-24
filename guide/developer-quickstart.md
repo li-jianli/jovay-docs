@@ -35,8 +35,9 @@ Refer to the [MetaMask help document](https://support.metamask.io/configure/netw
 
 > 💡**Tips:** We recommend adding the "Block explorer URL" part when you add network to metamask, but this is optional.
 
-![The Config of Jovay Testnet](/Images/developer-quickstart/the-config-of-Jovay.png)
-*Figure 1: the Config of Jovay Testnet*
+<div align="center"><img src="/public/Images/developer-quickstart/the-config-of-Jovay.png"></div><br>
+
+<div align="center"><i>Figure 1: the Config of Jovay Testnet</i></div>
 
 ## 💸 Get Funds on Jovay
 To pay for transaction fees on Jovay, you need its native asset, ETH. You can acquire ETH on Jovay using one of the following methods:
@@ -85,26 +86,30 @@ Before you start, switch your MetaMask to Jovay testnet and the Remix environmen
 
 After deployment, you can find your deployed contract like below. You can search your contract address on [Jovay explorer](https://sepolia-explorer.jovay.io/l2) and get the details.
 
-![A Deployed Demo Contract](/Images/developer-quickstart/a-deployed-demo-contract.png)
-*Figure 2: A Deployed Demo Contract*
+<div align="center"><img src="/public/Images/developer-quickstart/a-deployed-demo-contract.png"></div><br>
+
+<div align="center"><i>Figure 2: A Deployed Demo Contract</i></div>
 
 ### Interacting with deployed contract
 Set the some string value in the input box. And click button `transact` to request the wallet to sign and send a transaction to Jovay testnet.
 
-![Call and Send Tx](/Images/developer-quickstart/call-and-send-tx.png)
-*Figure 3: Call and Send Tx 🏎️*
+<div align="center"><img src="/public/Images/developer-quickstart/call-and-send-tx.png"></div><br>
+
+<div align="center"><i>Figure 3: Call and Send Tx 🏎️</i></div>
 
 Copy the transaction hash which you can find it from Remix console like below. Then search transaction hash on [Jovay explorer](https://sepolia-explorer.jovay.io/l2) and you can have more details. The transaction is going to be confirmed in seconds.
 
 ![Transaction Just Sent](/Images/developer-quickstart/transaction-just-sent.png)
-*Figure 4: Transaction Just Sent*
+
+<div align="center"><i>Figure 4: Transaction Just Sent</i></div>
 
 After confirmation, your account balance will be reduced to pay the transaction fee. Checkout your MetaMask to see it. You will find Jovay is fast⚡️️ and cheap💸.
 
 Then call the GetContent function to check the content value. You should get the updated value which set by sent transaction.
 
-![New Content](/Images/developer-quickstart/new-content.png)
-*Figure 5: New Content*
+<div align="center"><img src="/public/Images/developer-quickstart/new-content.png"></div><br>
+
+<div align="center"><i>Figure 5: New Content</i></div>
 
 Now you understand that the smart contract development on Jovay is same as on Ethereum, and more smooth on Jovay☄️.
 
