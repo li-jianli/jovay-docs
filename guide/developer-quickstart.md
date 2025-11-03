@@ -31,7 +31,7 @@ Refer to the [MetaMask help document](https://support.metamask.io/configure/netw
 | **RPC URL** | `https://api.zan.top/public/jovay-testnet` | `https://rpc.jovay.io` |
 | **Chain ID** | `2019775` | `5734951` |
 | **Symbol** | ETH | ETH |
-| **Block Explorer URL** | `https://sepolia-explorer.jovay.io/l2` | `https://explorer.jovay.io` |
+| **Block Explorer URL** | `https://sepolia-explorer.jovay.io` | `https://explorer.jovay.io` |
 
 For more detailed network information, please see the [Network Information](../developer/network-information.md) page.
 
@@ -88,7 +88,7 @@ contract JovayExample {
 ### Deploy contract
 Before you start, switch your MetaMask to Jovay testnet and the Remix environment to MetaMask. Then on Remix, compile the contract and deploy it. In case you don't know how, Remix has a [guide](https://remix-ide.readthedocs.io/en/latest/run.html) for users.
 
-After deployment, you can find your deployed contract like below. You can search your contract address on [Jovay explorer](https://sepolia-explorer.jovay.io/l2) and get the details.
+After deployment, you can find your deployed contract like below. You can search your contract address on [Jovay explorer](https://sepolia-explorer.jovay.io) and get the details.
 
 <div align="center"><img src="/Images/developer-quickstart/a-deployed-demo-contract.png"></div><br>
 
@@ -101,7 +101,7 @@ Set the some string value in the input box. And click button `transact` to reque
 
 <div align="center"><i>Figure 3: Call and Send Tx 🏎️</i></div>
 
-Copy the transaction hash which you can find it from Remix console like below. Then search transaction hash on [Jovay explorer](https://sepolia-explorer.jovay.io/l2) and you can have more details. The transaction is going to be confirmed in seconds.
+Copy the transaction hash which you can find it from Remix console like below. Then search transaction hash on [Jovay explorer](https://sepolia-explorer.jovay.io) and you can have more details. The transaction is going to be confirmed in seconds.
 
 ![Transaction Just Sent](/Images/developer-quickstart/transaction-just-sent.png)
 
