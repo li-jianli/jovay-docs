@@ -28,7 +28,7 @@ The Jovay Testnet is the recommended environment for development, testing, and s
 | **RPC URL** | `https://api.zan.top/public/jovay-testnet` |
 | **Chain ID** | `2019775` |
 | **Currency Symbol** | `ETH` |
-| **Block Explorer URL** | `https://sepolia-explorer.jovay.io/l2` |
+| **Block Explorer URL** | `https://sepolia-explorer.jovay.io` |
 | **L1 Bridge Contract** | `0x940eFB877281884699176892B02A3db49f29CDE8` |
 | **L2 Bridge Contract** | `0xD278bC7189d2ed65c005c345A0e8a387f15b7a3A` |
 
