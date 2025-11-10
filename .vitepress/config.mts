@@ -122,7 +122,10 @@ export default defineConfig({
                 link: "/developer/integration/jovay-dapp-viem-integration-tutorial",
               },
             ],
-          }
+          },
+          {
+            text: "Verify Contract On Explorer", link: "/developer/verify-contract-guide"
+          },
         ],
       },
       {

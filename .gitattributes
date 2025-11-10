@@ -22,3 +22,12 @@ public/Images/user-guide/metamask-add-network.png filter=lfs diff=lfs merge=lfs 
 security-reports/202510/Jovay-Solidity-Rollup-Audit-2025.10.pdf filter=lfs diff=lfs merge=lfs -text
 security-reports/202510/Jovay-Solidity-Sequencer-Audit-2025.10.pdf filter=lfs diff=lfs merge=lfs -text
 security-reports/202510/Jovay-TEE-Verifier-Audit-2025.10.pdf filter=lfs diff=lfs merge=lfs -text
+public/Images/verify-contract-guide/verify-json-file-step2.png filter=lfs diff=lfs merge=lfs -text
+public/Images/verify-contract-guide/verify-json-file-step3.png filter=lfs diff=lfs merge=lfs -text
+public/Images/verify-contract-guide/verify-single-file-step4-2.png filter=lfs diff=lfs merge=lfs -text
+public/Images/verify-contract-guide/verify-json-file-step1.png filter=lfs diff=lfs merge=lfs -text
+public/Images/verify-contract-guide/verify-nav.png filter=lfs diff=lfs merge=lfs -text
+public/Images/verify-contract-guide/verify-single-file-step1.png filter=lfs diff=lfs merge=lfs -text
+public/Images/verify-contract-guide/verify-single-file-step2.png filter=lfs diff=lfs merge=lfs -text
+public/Images/verify-contract-guide/verify-single-file-step3.png filter=lfs diff=lfs merge=lfs -text
+public/Images/verify-contract-guide/verify-single-file-step4-1.png filter=lfs diff=lfs merge=lfs -text
