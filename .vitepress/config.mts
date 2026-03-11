@@ -1,6 +1,34 @@
 import { defineConfig } from "vitepress";
 import markdownItMathjax3 from 'markdown-it-mathjax3'
 import fs from 'fs';
+import path from 'path';
+
+/**
+ * 收集项目根下所有 .md 相对路径（排除 node_modules / .vitepress / .git），
+ * 用于 buildEnd 写入 dist/<相对路径>（与 html 同级），实现「按页」提供原文，不打入客户端 bundle。
+ */
+function collectMdRelPaths(rootDir: string): string[] {
+  const skipDirs = new Set(['node_modules', '.git', '.vitepress'])
+  const result: string[] = []
+  function walk(dir: string) {
+    let entries: fs.Dirent[]
+    try {
+      entries = fs.readdirSync(dir, { withFileTypes: true })
+    } catch {
+      return
+    }
+    for (const e of entries) {
+      const full = path.join(dir, e.name)
+      if (e.isDirectory()) {
+        if (!skipDirs.has(e.name)) walk(full)
+      } else if (e.isFile() && e.name.endsWith('.md')) {
+        result.push(path.relative(rootDir, full))
+      }
+    }
+  }
+  walk(rootDir)
+  return result
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -291,6 +319,30 @@ export default defineConfig({
       });
       return items;
     },
-  }
+  },
+
+  /**
+   * 构建结束后把每篇 md 复制到 dist/<相对路径>，与对应 .html 同级。
+   * 同时满足：VitePress local search 的 GET /guide/xxx.md、CopyPageButton fetch(base + filePath)。只保留一份，不再使用 /raw。
+   */
+  async buildEnd() {
+    const root = process.cwd()
+    const distDir = path.join(root, '.vitepress', 'dist')
+    if (!fs.existsSync(distDir)) {
+      return
+    }
+    // 历史构建可能留下 raw/，已废弃，删掉避免部署目录里多一套重复 md
+    const legacyRaw = path.join(distDir, 'raw')
+    if (fs.existsSync(legacyRaw)) {
+      fs.rmSync(legacyRaw, { recursive: true })
+    }
+    const relPaths = collectMdRelPaths(root)
+    for (const rel of relPaths) {
+      const srcPath = path.join(root, rel)
+      const dest = path.join(distDir, rel)
+      fs.mkdirSync(path.dirname(dest), { recursive: true })
+      fs.copyFileSync(srcPath, dest)
+    }
+  },
 });
 
