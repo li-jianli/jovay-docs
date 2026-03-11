@@ -6,6 +6,7 @@ import "vitepress-plugin-codeblocks-fold/style/index.css";
 import ImagePreview from "./components/ImagePreview.vue";
 import CustomImage from "./components/CustomImage.vue";
 import EnhancedCollapsibleCodeBlock from "./components/EnhancedCollapsibleCodeBlock.vue";
+import CopyPageButton from "./components/CopyPageButton.vue";
 
 // 创建一个简单的事件总线
 const eventBus = {
@@ -35,6 +36,7 @@ export default {
     app.provide("imagePreview", imagePreviewService);
     app.provide("eventBus", eventBus);
     app.component("EnhancedCollapsibleCodeBlock", EnhancedCollapsibleCodeBlock);
+    app.component("CopyPageButton", CopyPageButton);
   },
   setup() {
     // get frontmatter and route
@@ -46,6 +48,8 @@ export default {
   Layout() {
     return h(DefaultTheme.Layout, null, {
       "layout-bottom": () => h(ImagePreview),
+      // 挂载在 content-after，组件内会把 DOM 挪到 #local-search 后（主题里 after 实际在 menu 之后）
+      "nav-bar-content-after": () => h(CopyPageButton),
     });
   },
 };
